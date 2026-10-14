@@ -28,7 +28,7 @@ print("  ok  mediapipe face detector")
 PY
 python -c "import librosa, imagehash, moviepy, noisereduce, av; print('  ok  python imports')"
 mkdir -p remotion/public/clips && cp "$W/reel.mp4" remotion/public/clips/_smoke.mp4
-python -c "import json; json.dump({'clip':'clips/_smoke.mp4','durationSec':1,'hook':'smoke','captions':json.load(open('$W/t.captions.json'))}, open('$W/props.json','w'))"
+python -c "import json; json.dump({'clip':'clips/_smoke.mp4','durationSec':1,'hook':{'text':'smoke','style':'stamp'},'endCard':True,'captions':json.load(open('$W/t.captions.json'))}, open('$W/props.json','w'))"
 (cd remotion && npx remotion render src/index.ts Reel "$W/remotion.mp4" --props="$W/props.json" --log=error >/dev/null)
 rm remotion/public/clips/_smoke.mp4; ok "remotion render"
 echo "all good"
