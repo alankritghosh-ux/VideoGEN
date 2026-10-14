@@ -24,7 +24,7 @@ and B is A with the hook, stamps and cards switched off.
 |---|---|---|
 | Canvas | 1080×1920, 30 fps, H.264, −14 LUFS | — |
 | Hook | First 2–4 s. Two variants: **box**, a white rounded card with black bold sentence-case text ("They thought she was the secretary.", "Her advice to founders who just want to be billionaires"); **stamp**, uppercase white on magenta strips, one strip per line ("BOOTSTRAPPED 7 YEARS. / THEN HE RAISED.", "WHAT MAKES A GOOD LAWYER?") | `hook: {text, style: 'box' \| 'stamp', durationMs}` |
-| Name lower-third | Under the hook, top-left: magenta block with the name, white block with the role ("Kiran Mazumdar-Shaw / Founder, Biocon") | `speaker: {name, role, fromMs, durationMs}` |
+| Name lower-third | Under the hook, top-left: magenta block with the name, white block with the role ("Kiran Mazumdar-Shaw / Founder, Biocon") | `speakers: [{name, role, fromMs, durationMs}]` |
 | Captions | 2–4 words per page, bold sans, white with a dark outline, **active word magenta**, lower-middle (above the platform UI) | `captions` (from `tools/transcribe.py`) |
 | Emphasis stamps | 1–3 per video on the key phrase ("NOT", "AVOID DISPUTES", "DON'T COMPLAIN", "GROW WITH", "CONFIDENCE"). Big uppercase on magenta, centre screen, slight tilt; captions hide while one is up | `emphasis: [{text, startMs, endMs}]` |
 | Quote card | Full-screen cream card, small grey kicker, large serif line, smaller serif sub-line ("WHAT DO I WANT? / I want to be heard / Before the law. Before positions."). 1–2 s | `quoteCards: [...]` |

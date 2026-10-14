@@ -18,6 +18,7 @@ import {BRAND, SANS, SERIF} from './brand';
 // in magenta, big uppercase "emphasis" stamps, cream serif quote cards, navy end card.
 // See docs/STYLE.md.
 
+export type Speaker = {name: string; role: string; fromMs: number; durationMs: number};
 export type Emphasis = {text: string; startMs: number; endMs: number};
 export type QuoteCard = {startMs: number; durationMs: number; kicker?: string; quote: string; sub?: string};
 
@@ -29,7 +30,8 @@ export type ReelProps = {
   // "box": white rounded card, sentence case (fireside clips).
   // "stamp": uppercase white text on magenta strips (founder visits).
   hook?: {text: string; style: 'box' | 'stamp'; durationMs?: number};
-  speaker?: {name: string; role: string; fromMs?: number; durationMs?: number};
+  // Name lower-thirds; one entry per appearance (shown under the hook while both are up).
+  speakers?: Speaker[];
   emphasis?: Emphasis[];
   quoteCards?: QuoteCard[];
   endCard?: boolean;
@@ -77,12 +79,14 @@ const Hook: React.FC<{text: string; style: 'box' | 'stamp'; frame: number}> = ({
               color: BRAND.ink,
               fontFamily: SANS,
               fontWeight: 800,
-              fontSize: 54,
+              // Shrink long lines so they don't orphan a word.
+              fontSize: Math.max(...text.split('\n').map((l) => l.length)) > 26 ? 46 : 54,
               lineHeight: 1.15,
               padding: '22px 36px',
               borderRadius: 16,
-              maxWidth: 860,
+              maxWidth: 940,
               textAlign: 'center',
+              whiteSpace: 'pre-line',
             }}
           >
             {text}
@@ -106,16 +110,15 @@ const SpeakerTag: React.FC<{name: string; role: string; frame: number}> = ({name
 };
 
 // Hook and name tag share one column at the top so the tag always sits below the hook.
-const TopStack: React.FC<{hook?: ReelProps['hook']; speaker?: ReelProps['speaker']}> = ({hook, speaker}) => {
+const TopStack: React.FC<{hook?: ReelProps['hook']; speakers: Speaker[]}> = ({hook, speakers}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const hookEnd = msToFrame(hook?.durationMs ?? 2500, fps);
-  const spFrom = msToFrame(speaker?.fromMs ?? 2500, fps);
-  const spEnd = spFrom + msToFrame(speaker?.durationMs ?? 3000, fps);
+  const sp = speakers.find((s) => frame >= msToFrame(s.fromMs, fps) && frame < msToFrame(s.fromMs + s.durationMs, fps));
   return (
     <AbsoluteFill style={{paddingTop: 230, paddingLeft: 70, paddingRight: 70, flexDirection: 'column', gap: 28}}>
       {hook && frame < hookEnd ? <Hook text={hook.text} style={hook.style} frame={frame} /> : null}
-      {speaker && frame >= spFrom && frame < spEnd ? <SpeakerTag name={speaker.name} role={speaker.role} frame={frame - spFrom} /> : null}
+      {sp ? <SpeakerTag name={sp.name} role={sp.role} frame={frame - msToFrame(sp.fromMs, fps)} /> : null}
     </AbsoluteFill>
   );
 };
@@ -205,7 +208,7 @@ const EndCard: React.FC = () => {
   );
 };
 
-export const Reel: React.FC<ReelProps> = ({clip, durationSec, captions, hook, speaker, emphasis = [], quoteCards = [], endCard}) => {
+export const Reel: React.FC<ReelProps> = ({clip, durationSec, captions, hook, speakers = [], emphasis = [], quoteCards = [], endCard}) => {
   const {fps} = useVideoConfig();
   const {pages} = useMemo(
     () => createTikTokStyleCaptions({captions, combineTokensWithinMilliseconds: 700}),
@@ -229,7 +232,7 @@ export const Reel: React.FC<ReelProps> = ({clip, durationSec, captions, hook, sp
             </Sequence>
           );
         })}
-        <TopStack hook={hook} speaker={speaker} />
+        <TopStack hook={hook} speakers={speakers} />
         {emphasis.map((e) => (
           <Sequence key={e.startMs} from={msToFrame(e.startMs, fps)} durationInFrames={Math.max(1, msToFrame(e.endMs - e.startMs, fps))} layout="none">
             <EmphasisStamp text={e.text} />
