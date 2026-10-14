@@ -19,8 +19,10 @@ Cloud-sandbox network rules that shape tool choices:
 - `tools/transcribe.py` — offline word-level ASR. `--model parakeet` (default, 25 EU languages incl. English),
   `sensevoice` (zh/en/ja/ko/yue), `whisper` (any language, segment timing only). Outputs whisper-style JSON
   (works with clipify's `build_ass.py`), `@remotion/captions` JSON and SRT.
-- `remotion/` — Remotion 4 project. Composition `Reel` (`src/Reel.tsx`): 9:16 clip + TikTok-style word-highlight
-  captions + hook banner. Put clips in `remotion/public/clips/`, render with
+- `docs/STYLE.md` — **Campus Fund house style** (read before editing any reel): formats, hook/caption/stamp/quote-card/end-card
+  spec, titles and descriptions. Target is YouTube Shorts (same master is used for Instagram Reels, @campus.fund).
+- `remotion/` — Remotion 4 project. Composition `Reel` (`src/Reel.tsx`, brand tokens in `src/brand.ts`) implements the house
+  style: hook (box/stamp), name lower-third, magenta active-word captions, emphasis stamps, quote cards, end card. Put clips in `remotion/public/clips/`, render with
   `cd remotion && npx remotion render src/index.ts Reel out/x.mp4 --props=props.json`.
 - `models/` (gitignored) — sherpa-onnx ASR models, Silero VAD, MediaPipe face detectors, RNNoise `.rnnn` files.
 - `.claude/skills/` — vendored skills: Remotion (official), ffmpeg core/effects/social/python + viral-video

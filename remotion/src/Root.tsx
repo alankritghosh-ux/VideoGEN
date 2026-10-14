@@ -1,5 +1,5 @@
 import {Composition} from 'remotion';
-import {Reel, reelSchemaDefaults, type ReelProps} from './Reel';
+import {END_CARD_SEC, Reel, reelDefaults, type ReelProps} from './Reel';
 
 const FPS = 30;
 
@@ -11,10 +11,10 @@ export const RemotionRoot: React.FC = () => (
     height={1920}
     fps={FPS}
     durationInFrames={FPS * 10}
-    defaultProps={reelSchemaDefaults}
-    // Length follows the clip: pass --props with durationSec from the pipeline.
+    defaultProps={reelDefaults}
+    // Length follows the clip (+ end card): the pipeline passes durationSec via --props.
     calculateMetadata={({props}: {props: ReelProps}) => ({
-      durationInFrames: Math.max(1, Math.round(props.durationSec * FPS)),
+      durationInFrames: Math.max(1, Math.round((props.durationSec + (props.endCard ? END_CARD_SEC : 0)) * FPS)),
     })}
   />
 );
