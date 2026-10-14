@@ -1,7 +1,7 @@
 # 05_space: "Pharma lab in space" (Kiran Mazumdar-Shaw fireside)
 
 Source: `05_space.mp4` (Drive folder 1V2BiCmTRP50jxOX1hmuyEHXklwtvRDX6), 63 s. It was already edited with burned-in captions.
-Output: `output/05_space_viral.mp4`, 44 s (41.4 s cut + 2.6 s end card), 1080x1920 @ 30 fps, -14.6 LUFS.
+Output: `output/05_space_viral.mp4`, 43.4 s (40.8 s cut + 2.6 s end card), 1080x1920 @ 30 fps, -14.6 LUFS.
 
 Rebuild:
     python tools/assemble.py edits/05_space/edl.json work/space/cut.mp4
@@ -11,7 +11,7 @@ Rebuild:
 
 Changes vs the original:
 - Cold open on the payoff line ("don't get driven by a cool idea that it'll remain in space") instead of the setup.
-- Cold open -> founder: after "space." Kiran's last frame holds (freeze + slow push-in) for ~1.9 s, so her line lands with a ~1.6 s pause of real room tone (off-mic noise at src 54.1-54.5 skipped) before the cut to the founder. Hook and her name tag stay up through the hold.
+- Cold open -> founder: Kiran finishes "…remain in space.", then the founder's real on-camera reaction (grins, says "Yeah.", ~1.2 s, src 53.24-54.48) gives the line room before his pitch. It's a close-up crop so the original's mistimed caption stays out of frame. No freeze-frames; audio stays in sync.
 - Fixed the original's swapped name tags (Kiran was labelled "Campus Fund founder" and vice versa). The punch-in crops the old tags out.
 - Removed "my my my question to you", the "uh"s and the audience "Nice.". The cut went from 63 s to 39.8 s.
 - Punch-in zooms alternate on every cut, and there are 2 emphasis stamps (VERY DIFFICULT MODEL, DON'T STAY IN A COCOON) plus the end card.
