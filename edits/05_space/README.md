@@ -11,6 +11,7 @@ Rebuild:
 
 Changes vs the original:
 - Cold open on the payoff line ("don't get driven by a cool idea that it'll remain in space") instead of the setup.
+- Cold open -> founder transition: Kiran's video ends on the frame before the original edit's cutaway, the founder reaction shot carries the tail of "space." with an easing punch-in, and the founder starts on a clean caption. The hook and her name tag end exactly at the shot change.
 - Fixed the original's swapped name tags (Kiran was labelled "Campus Fund founder" and vice versa). The punch-in crops the old tags out.
 - Removed "my my my question to you", the "uh"s and the audience "Nice.". The cut went from 63 s to 39.8 s.
 - Punch-in zooms alternate on every cut, and there are 2 emphasis stamps (VERY DIFFICULT MODEL, DON'T STAY IN A COCOON) plus the end card.

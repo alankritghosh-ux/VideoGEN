@@ -1,21 +1,136 @@
 {
-  "source": "input/05_space.mp4",
-  "fps": 30,
-  "segments": [
-    {"in": 49.70, "out": 53.45, "zoom": 1.12, "cx": 0.5, "cy": 0.40, "note": "COLD OPEN: Kiran - don't get driven by a cool idea"},
-    {"in": 5.30, "out": 10.30, "zoom": 1.22, "cx": 0.5, "cy": 0.58, "note": "Founder pitch: suitcase-size satellites (zoom hides old swapped name tag)"},
-    {"in": 10.38, "out": 14.00, "zoom": 1.28, "cx": 0.5, "cy": 0.56, "note": "Founder: biologics in space (punch-in)"},
-    {"in": 20.58, "out": 25.55, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "Kiran: very difficult model to accelerate"},
-    {"in": 26.05, "out": 30.27, "zoom": 1.14, "cx": 0.5, "cy": 0.40, "note": "Kiran: send things to space but manufacture..."},
-    {"in": 31.45, "out": 32.95, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "bring it into the"},
-    {"in": 33.18, "out": 33.58, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "real (uh removed)"},
-    {"in": 33.88, "out": 34.35, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "world"},
-    {"in": 34.75, "out": 36.35, "zoom": 1.14, "cx": 0.5, "cy": 0.40, "note": "you will have to find a way of"},
-    {"in": 37.28, "out": 39.15, "zoom": 1.14, "cx": 0.5, "cy": 0.40, "note": "translating that on earth"},
-    {"in": 39.68, "out": 40.85, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "once you figure out"},
-    {"in": 42.78, "out": 44.75, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "the science behind what's happening ('Nice.' removed)"},
-    {"in": 45.73, "out": 47.25, "zoom": 1.18, "cx": 0.5, "cy": 0.38, "note": "you can create that science here"},
-    {"in": 55.15, "out": 58.95, "zoom": 1.0, "cx": 0.5, "cy": 0.5, "note": "TAKEAWAY: must not remain in a cocoon"},
-    {"in": 59.22, "out": 63.15, "zoom": 1.16, "cx": 0.5, "cy": 0.38, "note": "brainstorm it with as many people as possible"}
-  ]
+ "source": "input/05_space.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "in": 49.7,
+   "out": 53.22,
+   "zoom": 1.12,
+   "cx": 0.5,
+   "cy": 0.4,
+   "note": "COLD OPEN: Kiran - don't get driven by a cool idea"
+  },
+  {
+   "in": 53.24,
+   "out": 53.47,
+   "zoom": 1.22,
+   "cx": 0.5,
+   "cy": 0.58,
+   "punch_from": 1.45,
+   "fade_out": 0.09,
+   "note": "Founder reaction cutaway (from original edit) carries the tail of 'space.'"
+  },
+  {
+   "in": 5.36,
+   "out": 10.3,
+   "zoom": 1.22,
+   "cx": 0.5,
+   "cy": 0.58,
+   "note": "Founder pitch: suitcase-size satellites (starts on clean caption; zoom hides old swapped tag)"
+  },
+  {
+   "in": 10.38,
+   "out": 14.0,
+   "zoom": 1.28,
+   "cx": 0.5,
+   "cy": 0.56,
+   "note": "Founder: biologics in space (punch-in)"
+  },
+  {
+   "in": 20.58,
+   "out": 25.55,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "Kiran: very difficult model to accelerate"
+  },
+  {
+   "in": 26.05,
+   "out": 30.27,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.4,
+   "note": "Kiran: send things to space but manufacture..."
+  },
+  {
+   "in": 31.45,
+   "out": 32.95,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "bring it into the"
+  },
+  {
+   "in": 33.18,
+   "out": 33.58,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "real (uh removed)"
+  },
+  {
+   "in": 33.88,
+   "out": 34.35,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "world"
+  },
+  {
+   "in": 34.75,
+   "out": 36.35,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.4,
+   "note": "you will have to find a way of"
+  },
+  {
+   "in": 37.28,
+   "out": 39.15,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.4,
+   "note": "translating that on earth"
+  },
+  {
+   "in": 39.68,
+   "out": 40.85,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "once you figure out"
+  },
+  {
+   "in": 42.78,
+   "out": 44.75,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "the science behind what's happening ('Nice.' removed)"
+  },
+  {
+   "in": 45.73,
+   "out": 47.25,
+   "zoom": 1.18,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "you can create that science here"
+  },
+  {
+   "in": 55.15,
+   "out": 58.95,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.5,
+   "note": "TAKEAWAY: must not remain in a cocoon"
+  },
+  {
+   "in": 59.22,
+   "out": 63.15,
+   "zoom": 1.16,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "brainstorm it with as many people as possible"
+  }
+ ]
 }

@@ -1,42 +1,42 @@
 {
  "clip": "clips/05_space_cut.mp4",
- "durationSec": 39.79,
+ "durationSec": 39.83,
  "captions": [],
  "hook": {
   "text": "He's building a pharma lab\nin space. Kiran Mazumdar-Shaw\nisn't sold.",
   "style": "box",
-  "durationMs": 3700
+  "durationMs": 3520
  },
  "speakers": [
   {
    "name": "Kiran Mazumdar-Shaw",
    "role": "Founder, Biocon",
    "fromMs": 400,
-   "durationMs": 3300
+   "durationMs": 3120
   },
   {
    "name": "Campus Fund founder",
    "role": "Building a pharma lab in orbit",
-   "fromMs": 3950,
+   "fromMs": 3780,
    "durationMs": 3600
   },
   {
    "name": "Kiran Mazumdar-Shaw",
    "role": "Founder, Biocon",
-   "fromMs": 12500,
+   "fromMs": 12440,
    "durationMs": 2400
   }
  ],
  "emphasis": [
   {
    "text": "VERY DIFFICULT\nMODEL",
-   "startMs": 12900,
-   "endMs": 14400
+   "startMs": 12840,
+   "endMs": 14340
   },
   {
    "text": "DON'T STAY IN\nA COCOON",
-   "startMs": 34950,
-   "endMs": 36700
+   "startMs": 34890,
+   "endMs": 36640
   }
  ],
  "quoteCards": [],
