@@ -1,0 +1,19 @@
+# Python 3.12 (mediapipe has no 3.13 wheel yet). Installed by scripts/setup.sh into .venv
+sherpa-onnx==1.13.8          # offline ASR (Parakeet / SenseVoice / Whisper ONNX) + Silero VAD
+scenedetect[opencv-headless]==0.7.2  # shot / scene detection
+auto-editor==29.3.1          # silence & motion based auto-cutting, NLE XML export
+moviepy==2.2.1               # Python compositing
+av==19.0.1                   # PyAV, frame-accurate decode
+opencv-python-headless==5.0.0.93
+mediapipe==1.1.0             # face detection for 9:16 auto-reframe (needs libegl1)
+imagehash==4.3.2             # perceptual hashing / duplicate shot detection
+pillow==11.3.0
+librosa==1.0.0               # beat / onset detection for music-synced cuts
+soundfile==0.14.0
+noisereduce==3.0.3           # spectral noise reduction
+ffmpeg-normalize==1.43.0     # EBU R128 loudness (-14 LUFS for social)
+pysubs2==1.9.0               # SRT / ASS caption editing
+numpy==2.5.4
+yt-dlp==2026.8.19
+rich==15.0.0
+typer==0.27.3

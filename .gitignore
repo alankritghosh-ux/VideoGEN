@@ -1,0 +1,15 @@
+.venv/
+node_modules/
+models/
+__pycache__/
+*.pyc
+# media is never committed
+input/
+output/
+work/
+remotion/public/clips/
+remotion/out/
+*.mp4
+*.mov
+*.mkv
+*.wav
