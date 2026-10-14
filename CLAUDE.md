@@ -4,8 +4,8 @@ Turns large, unlabelled piles of raw footage into short vertical reels (9:16, 10
 
 ## Setup
 
-Run `scripts/setup.sh` at the start of every fresh session (idempotent, ~1.3 GB of models, a few minutes the
-first time), then `scripts/smoke_test.sh` to confirm everything works. Activate Python with `source .venv/bin/activate`.
+A SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh` automatically (idempotent, ~1.3 GB of models,
+a few minutes on a fresh container). If something is missing, run it by hand, then `scripts/smoke_test.sh` to confirm everything works. Activate Python with `source .venv/bin/activate`.
 
 Cloud-sandbox network rules that shape tool choices:
 - HuggingFace, download.pytorch.org, openaipublic (OpenAI Whisper/CLIP), jsdelivr/unpkg, remotion.media are **blocked**.
@@ -35,5 +35,4 @@ H.264 High, yuv420p, 1080x1920, 30 fps, `-crf 18 -movflags +faststart`, AAC 48 k
 
 ## Licensing
 
-Remotion is source-available: free only for individuals, non-profits and companies with ≤3 employees; otherwise a
-Company License is required (remotion.pro). Everything else installed is MIT/BSD/Apache/ISC/Unlicense.
+Remotion is source-available; we qualify for the free license (confirmed 2026-10-14). Everything else installed is MIT/BSD/Apache/ISC/Unlicense.
