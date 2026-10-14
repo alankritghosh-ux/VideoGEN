@@ -11,14 +11,38 @@
    "note": "COLD OPEN: Kiran - don't get driven by a cool idea"
   },
   {
-   "in": 53.24,
-   "out": 53.47,
-   "zoom": 1.22,
+   "in": 53.22,
+   "out": 54.05,
+   "freeze_at": 53.16,
+   "zoom": 1.12,
+   "zoom_to": 1.17,
    "cx": 0.5,
-   "cy": 0.58,
-   "punch_from": 1.45,
-   "fade_out": 0.09,
-   "note": "Founder reaction cutaway (from original edit) carries the tail of 'space.'"
+   "cy": 0.4,
+   "fade_out": 0.05,
+   "note": "BEAT: hold on Kiran (freeze + push-in) while 'space.' rings out"
+  },
+  {
+   "in": 53.6,
+   "out": 54.05,
+   "freeze_at": 53.16,
+   "zoom": 1.17,
+   "zoom_to": 1.2,
+   "cx": 0.5,
+   "cy": 0.4,
+   "fade_out": 0.04,
+   "note": "BEAT cont.: more room tone"
+  },
+  {
+   "in": 54.55,
+   "out": 55.15,
+   "freeze_at": 53.16,
+   "zoom": 1.2,
+   "zoom_to": 1.23,
+   "cx": 0.5,
+   "cy": 0.4,
+   "fade_out": 0.06,
+   "note": "BEAT cont.: room tone (skips off-mic noise at 54.1-54.5)",
+   "punch_from": 1.4
   },
   {
    "in": 5.36,

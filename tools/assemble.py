@@ -14,6 +14,8 @@ zoom >= 1 punches in around (cx, cy) (fractions of the source frame); alternatin
 cuts on the same shot gives the jump-cut "punch-in" look. Optional per segment:
   "punch_from": 1.4   start wider-zoomed and ease into `zoom` over 0.25 s (impact on a cut)
   "fade_out": 0.08    longer audio fade-out (s) when a word's tail runs into the cut
+  "freeze_at": 53.16  hold this source frame for the segment's length (audio still plays in..out),
+                      pushing in from `zoom` to `zoom_to`: a beat to let a line land
 Audio gets 15 ms fades at every cut so joins don't click.
 
 Prints the output-timeline start of every segment (handy for placing overlays) and writes it to
@@ -49,6 +51,21 @@ def punch_expr(s: dict, sw: int, sh: int, src_fps: float) -> str:
             f"setpts=N/({src_fps}*TB),trim=end_frame={frames}")
 
 
+def freeze_expr(s: dict, sw: int, sh: int, src_fps: float) -> str:
+    """Single frame held for the segment duration with a linear push-in."""
+    d = s["out"] - s["in"]
+    frames = max(1, round(d * src_fps))
+    z0, z1 = s.get("zoom", 1.0), s.get("zoom_to", s.get("zoom", 1.0))
+    base = max(W / sw, H / sh)
+    zexpr = f"{z0}+({z1}-{z0})*on/{frames}"
+    x = f"clip(iw*{s.get('cx', 0.5)}-iw/zoom/2\\,0\\,iw-iw/zoom)"
+    y = f"clip(ih*{s.get('cy', 0.5)}-ih/zoom/2\\,0\\,ih-ih/zoom)"
+    pre = f"scale={round(sw * base / 2) * 2}:{round(sh * base / 2) * 2}," if base != 1 else ""
+    return (f"trim=start={s['freeze_at']}:end_frame=1,setpts=PTS-STARTPTS,{pre}"
+            f"zoompan=z='{zexpr}':x='{x}':y='{y}':d={frames}:s={W}x{H}:fps={src_fps},"
+            f"setpts=N/({src_fps}*TB),trim=end_frame={frames}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("edl", type=Path)
@@ -69,12 +86,15 @@ def main():
     parts, labels, timeline, t = [], [], [], 0.0
     for i, s in enumerate(edl["segments"]):
         d = s["out"] - s["in"]
-        if "punch_from" in s:
+        if "freeze_at" in s:
+            vf = freeze_expr(s, sw, sh, src_fps)
+        elif "punch_from" in s:
             vf = punch_expr(s, sw, sh, src_fps)
         else:
             vf = crop_expr(s.get("zoom", 1.0), s.get("cx", 0.5), s.get("cy", 0.5), sw, sh)
         fo = s.get("fade_out", FADE)
-        parts.append(f"[0:v]trim={s['in']}:{s['out']},setpts=PTS-STARTPTS,{vf},setsar=1,fps={fps},settb=AVTB[v{i}]")
+        vtrim = "" if "freeze_at" in s else f"trim={s['in']}:{s['out']},setpts=PTS-STARTPTS,"
+        parts.append(f"[0:v]{vtrim}{vf},setsar=1,fps={fps},settb=AVTB[v{i}]")
         parts.append(
             f"[0:a]atrim={s['in']}:{s['out']},asetpts=PTS-STARTPTS,"
             f"afade=t=in:d={FADE},afade=t=out:st={d - fo:.3f}:d={fo}[a{i}]"
