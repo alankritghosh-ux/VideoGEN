@@ -3,7 +3,8 @@ import json
 E = 'edits/07_kumar_focus'
 OVR_A = {}
 OVR_B = {31.22: 'optimise.', 2.15: '', 2.23: ''}  # ASR "optimism" -> optimise; drop the "you know" inside "juggle multiple balls"
-SOURCES = [(f'{E}/edl_a.json', 'input/drive/tx/C5790.whisper.json', OVR_A), (f'{E}/edl_b.json', 'input/drive/tx/C5793.whisper.json', OVR_B)]
+SOURCES = [(f'{E}/edl_a.json', 'input/drive/tx/C5790.whisper.json', OVR_A), (f'{E}/edl_a2.json', 'input/drive/tx/C5790.whisper.json', OVR_A),
+           (f'{E}/edl_b.json', 'input/drive/tx/C5793.whisper.json', OVR_B)]
 caps, t, marks = [], 0.0, {}
 for k, (edl_path, tx, ovr) in enumerate(SOURCES):
     edl = json.load(open(edl_path))
@@ -24,12 +25,13 @@ for k, (edl_path, tx, ovr) in enumerate(SOURCES):
 at = lambda k, src: marks[(k, src)]
 props = {
     'clip': 'clips/07_kumar_focus_cut.mp4', 'durationSec': round(t, 3), 'captions': caps,
-    'hook': {'text': '20 years building GoFrugal.\nHe optimises for one thing.', 'style': 'box', 'durationMs': 3400},
-    'speakers': [{'name': 'Kumar Vembu', 'role': 'Founder, GoFrugal', 'fromMs': 400, 'durationMs': 3000},
-                 {'name': 'Kumar Vembu', 'role': 'Founder, GoFrugal', 'fromMs': at(1, 13.57), 'durationMs': 2600}],
-    'emphasis': [{'text': "DON'T JUGGLE", 'startMs': at(1, 1.75), 'endMs': at(1, 1.75) + 1400},
-                 {'text': 'WILLING\nTO PAY', 'startMs': at(1, 19.09), 'endMs': at(1, 19.09) + 1500},
-                 {'text': 'KEEP\nUSING IT', 'startMs': at(1, 23.49), 'endMs': at(1, 23.49) + 1500}],
+    'hook': {'text': 'He co-founded Zoho, then built GoFrugal.\nHe optimises for one thing.', 'style': 'box', 'durationMs': 3600},
+    'speakers': [{'name': 'Kumar Vembu', 'role': 'Co-founder Zoho, Founder GoFrugal', 'fromMs': 400, 'durationMs': 3200},
+                 {'name': 'Shifa Garg', 'role': 'Campus Fund', 'fromMs': at(1, 6.17), 'durationMs': 2300},
+                 {'name': 'Kumar Vembu', 'role': 'Co-founder Zoho, Founder GoFrugal', 'fromMs': at(2, 13.57), 'durationMs': 2600}],
+    'emphasis': [{'text': "DON'T JUGGLE", 'startMs': at(2, 1.75), 'endMs': at(2, 1.75) + 1400},
+                 {'text': 'WILLING\nTO PAY', 'startMs': at(2, 19.09), 'endMs': at(2, 19.09) + 1500},
+                 {'text': 'KEEP\nUSING IT', 'startMs': at(2, 23.49), 'endMs': at(2, 23.49) + 1500}],
     'quoteCards': [], 'endCard': True}
 json.dump(props, open(f'{E}/props.json', 'w'), indent=1)
 print(f'{t:.2f}s, {len(caps)} words;', ''.join(c['text'] for c in caps))

@@ -1,0 +1,15 @@
+{
+ "source": "work/kumar/precut_5790_host.mp4",
+ "fps": 30,
+ "src_offset": 0.0,
+ "segments": [
+  {
+   "in": 5.9,
+   "out": 8.5,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.4,
+   "note": "C5790 Shifa Garg on camera: tree, right? So what's your advice?"
+  }
+ ]
+}

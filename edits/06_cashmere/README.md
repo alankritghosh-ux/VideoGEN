@@ -1,7 +1,7 @@
 # 06_cashmere: "10x more cashmere than goats" (Amit Gautam, Campus Fund fireside, 1 Sept 2025)
 
 Source: Drive folder 1eAfYloWtKzXI_yKfY6dWdb0eksRIEG2j, clips `C5744.MP4` (105 s, 16:9 4K) and `C5776.MP4` (28 s, portrait 4K).
-Output: `output/06_cashmere_reel.mp4`, 54.7 s (52.1 s cut + 2.5 s end card), 1080x1920 @ 30 fps, -14.2 LUFS.
+Output: `output/06_cashmere_reel.mp4`, 54.7 s (delivery copy `output/06_cashmere_reel_29mb.mp4`, two-pass x264 sized for the 30 MB chat limit) (52.1 s cut + 2.5 s end card), 1080x1920 @ 30 fps, -14.2 LUFS.
 
 Rebuild (needs the two raw clips in `input/drive/raw/`):
     ffmpeg -ss 14 -to 102 -i input/drive/raw/C5744.MP4 -vf "crop=1215:2160:1428:0,scale=1080:1920:flags=lanczos,curves=m='0/0 0.2/0.12 0.5/0.5 0.8/0.86 1/1',eq=saturation=1.45:contrast=1.03,fps=30,format=yuv420p" -c:v libx264 -crf 14 -c:a aac -b:a 320k work/cashmere/precut.mp4
