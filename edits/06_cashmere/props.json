@@ -1,6 +1,6 @@
 {
  "clip": "clips/06_cashmere_cut.mp4",
- "durationSec": 54.02,
+ "durationSec": 52.05,
  "captions": [
   {
    "text": "Up",
@@ -850,206 +850,220 @@
    "confidence": null
   },
   {
+   "text": " a digital",
+   "startMs": 41006,
+   "endMs": 41406,
+   "timestampMs": 41006,
+   "confidence": null
+  },
+  {
+   "text": " twin",
+   "startMs": 41406,
+   "endMs": 42126,
+   "timestampMs": 41406,
+   "confidence": null
+  },
+  {
+   "text": " of",
+   "startMs": 42126,
+   "endMs": 42366,
+   "timestampMs": 42126,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 42366,
+   "endMs": 42606,
+   "timestampMs": 42366,
+   "confidence": null
+  },
+  {
+   "text": " physical",
+   "startMs": 42606,
+   "endMs": 43086,
+   "timestampMs": 42606,
+   "confidence": null
+  },
+  {
+   "text": " material",
+   "startMs": 43086,
+   "endMs": 43726,
+   "timestampMs": 43086,
+   "confidence": null
+  },
+  {
+   "text": " at point",
+   "startMs": 43726,
+   "endMs": 43886,
+   "timestampMs": 43726,
+   "confidence": null
+  },
+  {
+   "text": " of",
+   "startMs": 43886,
+   "endMs": 44126,
+   "timestampMs": 43886,
+   "confidence": null
+  },
+  {
+   "text": " origin",
+   "startMs": 44126,
+   "endMs": 44526,
+   "timestampMs": 44126,
+   "confidence": null
+  },
+  {
+   "text": " and",
+   "startMs": 44526,
+   "endMs": 44686,
+   "timestampMs": 44526,
+   "confidence": null
+  },
+  {
+   "text": " you",
+   "startMs": 44686,
+   "endMs": 44846,
+   "timestampMs": 44686,
+   "confidence": null
+  },
+  {
+   "text": " create",
+   "startMs": 44846,
+   "endMs": 45086,
+   "timestampMs": 44846,
+   "confidence": null
+  },
+  {
    "text": " a",
-   "startMs": 40950,
-   "endMs": 41110,
-   "timestampMs": 40950,
+   "startMs": 45086,
+   "endMs": 45166,
+   "timestampMs": 45086,
    "confidence": null
   },
   {
-   "text": " fibre",
-   "startMs": 41110,
-   "endMs": 41590,
-   "timestampMs": 41110,
-   "confidence": null
-  },
-  {
-   "text": " coin",
-   "startMs": 41590,
-   "endMs": 41990,
-   "timestampMs": 41590,
-   "confidence": null
-  },
-  {
-   "text": " it's",
-   "startMs": 41990,
-   "endMs": 42310,
-   "timestampMs": 41990,
-   "confidence": null
-  },
-  {
-   "text": " a",
-   "startMs": 42310,
-   "endMs": 42470,
-   "timestampMs": 42310,
+   "text": " virtual",
+   "startMs": 45166,
+   "endMs": 45832,
+   "timestampMs": 45166,
    "confidence": null
   },
   {
    "text": " digital",
-   "startMs": 42470,
-   "endMs": 43110,
-   "timestampMs": 42470,
+   "startMs": 46350,
+   "endMs": 46750,
+   "timestampMs": 46350,
    "confidence": null
   },
   {
-   "text": " token.",
-   "startMs": 43110,
-   "endMs": 43830,
-   "timestampMs": 43110,
+   "text": " supply",
+   "startMs": 46750,
+   "endMs": 47150,
+   "timestampMs": 46750,
    "confidence": null
   },
   {
-   "text": " So",
-   "startMs": 43830,
-   "endMs": 44070,
-   "timestampMs": 43830,
+   "text": " chain",
+   "startMs": 47150,
+   "endMs": 47550,
+   "timestampMs": 47150,
    "confidence": null
   },
   {
-   "text": " we",
-   "startMs": 44070,
-   "endMs": 44390,
-   "timestampMs": 44070,
+   "text": " even",
+   "startMs": 47550,
+   "endMs": 47790,
+   "timestampMs": 47550,
    "confidence": null
   },
   {
-   "text": " digitize",
-   "startMs": 44390,
-   "endMs": 45350,
-   "timestampMs": 44390,
+   "text": " after",
+   "startMs": 47790,
+   "endMs": 48030,
+   "timestampMs": 47790,
    "confidence": null
   },
   {
-   "text": " the",
-   "startMs": 45350,
-   "endMs": 45910,
-   "timestampMs": 45350,
+   "text": " seven",
+   "startMs": 48030,
+   "endMs": 48350,
+   "timestampMs": 48030,
    "confidence": null
   },
   {
-   "text": " cotton",
-   "startMs": 46550,
-   "endMs": 47190,
-   "timestampMs": 46550,
+   "text": " years.",
+   "startMs": 48350,
+   "endMs": 48968,
+   "timestampMs": 48350,
    "confidence": null
   },
   {
-   "text": " plant.",
-   "startMs": 47190,
-   "endMs": 47824,
-   "timestampMs": 47190,
-   "confidence": null
-  },
-  {
-   "text": " at",
-   "startMs": 47880,
-   "endMs": 48040,
-   "timestampMs": 47880,
-   "confidence": null
-  },
-  {
-   "text": " the",
-   "startMs": 48040,
-   "endMs": 48120,
-   "timestampMs": 48040,
-   "confidence": null
-  },
-  {
-   "text": " point",
-   "startMs": 48120,
-   "endMs": 48280,
-   "timestampMs": 48120,
-   "confidence": null
-  },
-  {
-   "text": " of",
-   "startMs": 48280,
-   "endMs": 48600,
-   "timestampMs": 48280,
-   "confidence": null
-  },
-  {
-   "text": " origin",
-   "startMs": 48600,
-   "endMs": 49160,
-   "timestampMs": 48600,
-   "confidence": null
-  },
-  {
-   "text": " so",
-   "startMs": 49160,
-   "endMs": 49320,
-   "timestampMs": 49160,
+   "text": " No",
+   "startMs": 49144,
+   "endMs": 49304,
+   "timestampMs": 49144,
    "confidence": null
   },
   {
    "text": " one",
-   "startMs": 49320,
-   "endMs": 49480,
-   "timestampMs": 49320,
+   "startMs": 49304,
+   "endMs": 49624,
+   "timestampMs": 49304,
    "confidence": null
   },
   {
-   "text": " kilogram",
-   "startMs": 49480,
-   "endMs": 50040,
-   "timestampMs": 49480,
+   "text": " has",
+   "startMs": 49624,
+   "endMs": 49864,
+   "timestampMs": 49624,
    "confidence": null
   },
   {
-   "text": " of",
-   "startMs": 50040,
-   "endMs": 50530,
-   "timestampMs": 50040,
+   "text": " been",
+   "startMs": 49864,
+   "endMs": 50024,
+   "timestampMs": 49864,
    "confidence": null
   },
   {
-   "text": " cotton",
-   "startMs": 50588,
-   "endMs": 51308,
-   "timestampMs": 50588,
+   "text": " able",
+   "startMs": 50024,
+   "endMs": 50184,
+   "timestampMs": 50024,
    "confidence": null
   },
   {
-   "text": " at",
-   "startMs": 51628,
-   "endMs": 51948,
-   "timestampMs": 51628,
+   "text": " to",
+   "startMs": 50184,
+   "endMs": 50344,
+   "timestampMs": 50184,
    "confidence": null
   },
   {
-   "text": " origin",
-   "startMs": 51948,
-   "endMs": 52508,
-   "timestampMs": 51948,
+   "text": " launch",
+   "startMs": 50344,
+   "endMs": 50744,
+   "timestampMs": 50344,
    "confidence": null
   },
   {
-   "text": " becomes",
-   "startMs": 52508,
-   "endMs": 52828,
-   "timestampMs": 52508,
+   "text": " that.",
+   "startMs": 50744,
+   "endMs": 51010,
+   "timestampMs": 50744,
    "confidence": null
   },
   {
-   "text": " one",
-   "startMs": 52828,
-   "endMs": 53148,
-   "timestampMs": 52828,
+   "text": " No",
+   "startMs": 51544,
+   "endMs": 51784,
+   "timestampMs": 51544,
    "confidence": null
   },
   {
-   "text": " fibre",
-   "startMs": 53148,
-   "endMs": 53548,
-   "timestampMs": 53148,
-   "confidence": null
-  },
-  {
-   "text": " coin",
-   "startMs": 53548,
-   "endMs": 53948,
-   "timestampMs": 53548,
+   "text": " way.",
+   "startMs": 51784,
+   "endMs": 51970,
+   "timestampMs": 51784,
    "confidence": null
   }
  ],
@@ -1068,25 +1082,25 @@
   {
    "name": "Amit Gautam",
    "role": "Founder, TextileGenesis",
-   "fromMs": 38250,
+   "fromMs": 38236,
    "durationMs": 2600
   }
  ],
  "emphasis": [
   {
    "text": "10X MORE",
-   "startMs": 490,
-   "endMs": 2000
+   "startMs": 486,
+   "endMs": 1986
   },
   {
    "text": "FRAUD AND\nCORRUPTION",
    "startMs": 25580,
-   "endMs": 26650
+   "endMs": 26680
   },
   {
-   "text": "ONE KILO.\nONE COIN.",
-   "startMs": 52510,
-   "endMs": 53970
+   "text": "7 YEARS.\nNO ONE ELSE.",
+   "startMs": 49144,
+   "endMs": 51044
   }
  ],
  "quoteCards": [],
