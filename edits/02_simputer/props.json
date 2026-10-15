@@ -1,0 +1,775 @@
+{
+ "clip": "clips/02_simputer_cut.mp4",
+ "durationSec": 45.69,
+ "captions": [
+  {
+   "text": " this",
+   "startMs": 60,
+   "endMs": 540,
+   "timestampMs": 60,
+   "confidence": null
+  },
+  {
+   "text": " predated",
+   "startMs": 540,
+   "endMs": 1420,
+   "timestampMs": 540,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 1420,
+   "endMs": 1580,
+   "timestampMs": 1420,
+   "confidence": null
+  },
+  {
+   "text": " iPad,",
+   "startMs": 1580,
+   "endMs": 2620,
+   "timestampMs": 1580,
+   "confidence": null
+  },
+  {
+   "text": " predated",
+   "startMs": 2620,
+   "endMs": 3180,
+   "timestampMs": 2620,
+   "confidence": null
+  },
+  {
+   "text": " everything",
+   "startMs": 3180,
+   "endMs": 3580,
+   "timestampMs": 3180,
+   "confidence": null
+  },
+  {
+   "text": " you",
+   "startMs": 3580,
+   "endMs": 3740,
+   "timestampMs": 3580,
+   "confidence": null
+  },
+  {
+   "text": " can",
+   "startMs": 3740,
+   "endMs": 3900,
+   "timestampMs": 3740,
+   "confidence": null
+  },
+  {
+   "text": " think",
+   "startMs": 3900,
+   "endMs": 4060,
+   "timestampMs": 3900,
+   "confidence": null
+  },
+  {
+   "text": " of.",
+   "startMs": 4060,
+   "endMs": 5100,
+   "timestampMs": 4060,
+   "confidence": null
+  },
+  {
+   "text": " But",
+   "startMs": 5100,
+   "endMs": 5660,
+   "timestampMs": 5100,
+   "confidence": null
+  },
+  {
+   "text": " we",
+   "startMs": 5660,
+   "endMs": 6060,
+   "timestampMs": 5660,
+   "confidence": null
+  },
+  {
+   "text": " missed",
+   "startMs": 6060,
+   "endMs": 6380,
+   "timestampMs": 6060,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 6380,
+   "endMs": 6540,
+   "timestampMs": 6380,
+   "confidence": null
+  },
+  {
+   "text": " boat.",
+   "startMs": 6540,
+   "endMs": 7420,
+   "timestampMs": 6540,
+   "confidence": null
+  },
+  {
+   "text": " Why?",
+   "startMs": 7420,
+   "endMs": 8140,
+   "timestampMs": 7420,
+   "confidence": null
+  },
+  {
+   "text": " Because",
+   "startMs": 8140,
+   "endMs": 8540,
+   "timestampMs": 8140,
+   "confidence": null
+  },
+  {
+   "text": " they",
+   "startMs": 8540,
+   "endMs": 8700,
+   "timestampMs": 8540,
+   "confidence": null
+  },
+  {
+   "text": " didn't",
+   "startMs": 8700,
+   "endMs": 8940,
+   "timestampMs": 8700,
+   "confidence": null
+  },
+  {
+   "text": " know",
+   "startMs": 8940,
+   "endMs": 9100,
+   "timestampMs": 8940,
+   "confidence": null
+  },
+  {
+   "text": " how",
+   "startMs": 9100,
+   "endMs": 9260,
+   "timestampMs": 9100,
+   "confidence": null
+  },
+  {
+   "text": " to",
+   "startMs": 9260,
+   "endMs": 9420,
+   "timestampMs": 9260,
+   "confidence": null
+  },
+  {
+   "text": " commercialise",
+   "startMs": 9420,
+   "endMs": 10220,
+   "timestampMs": 9420,
+   "confidence": null
+  },
+  {
+   "text": " it.",
+   "startMs": 10220,
+   "endMs": 10758,
+   "timestampMs": 10220,
+   "confidence": null
+  },
+  {
+   "text": " Simputer",
+   "startMs": 10760,
+   "endMs": 11770,
+   "timestampMs": 10760,
+   "confidence": null
+  },
+  {
+   "text": " was",
+   "startMs": 11770,
+   "endMs": 11930,
+   "timestampMs": 11770,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 11930,
+   "endMs": 12090,
+   "timestampMs": 11930,
+   "confidence": null
+  },
+  {
+   "text": " world's",
+   "startMs": 12090,
+   "endMs": 12730,
+   "timestampMs": 12090,
+   "confidence": null
+  },
+  {
+   "text": " first",
+   "startMs": 12730,
+   "endMs": 13770,
+   "timestampMs": 12730,
+   "confidence": null
+  },
+  {
+   "text": " handheld",
+   "startMs": 13770,
+   "endMs": 14810,
+   "timestampMs": 13770,
+   "confidence": null
+  },
+  {
+   "text": " multilingual",
+   "startMs": 14810,
+   "endMs": 16310,
+   "timestampMs": 14810,
+   "confidence": null
+  },
+  {
+   "text": " GPRS",
+   "startMs": 16330,
+   "endMs": 17450,
+   "timestampMs": 16330,
+   "confidence": null
+  },
+  {
+   "text": " connected",
+   "startMs": 17450,
+   "endMs": 18250,
+   "timestampMs": 17450,
+   "confidence": null
+  },
+  {
+   "text": " computer.",
+   "startMs": 18250,
+   "endMs": 19290,
+   "timestampMs": 18250,
+   "confidence": null
+  },
+  {
+   "text": " How",
+   "startMs": 19290,
+   "endMs": 19530,
+   "timestampMs": 19290,
+   "confidence": null
+  },
+  {
+   "text": " do",
+   "startMs": 19530,
+   "endMs": 19610,
+   "timestampMs": 19530,
+   "confidence": null
+  },
+  {
+   "text": " you",
+   "startMs": 19610,
+   "endMs": 19770,
+   "timestampMs": 19610,
+   "confidence": null
+  },
+  {
+   "text": " teach",
+   "startMs": 19770,
+   "endMs": 20170,
+   "timestampMs": 19770,
+   "confidence": null
+  },
+  {
+   "text": " good",
+   "startMs": 20170,
+   "endMs": 20650,
+   "timestampMs": 20170,
+   "confidence": null
+  },
+  {
+   "text": " standardised",
+   "startMs": 20650,
+   "endMs": 21530,
+   "timestampMs": 20650,
+   "confidence": null
+  },
+  {
+   "text": " education",
+   "startMs": 21530,
+   "endMs": 22170,
+   "timestampMs": 21530,
+   "confidence": null
+  },
+  {
+   "text": " to",
+   "startMs": 22170,
+   "endMs": 22410,
+   "timestampMs": 22170,
+   "confidence": null
+  },
+  {
+   "text": " millions?",
+   "startMs": 22410,
+   "endMs": 23450,
+   "timestampMs": 22410,
+   "confidence": null
+  },
+  {
+   "text": " Not",
+   "startMs": 23450,
+   "endMs": 23770,
+   "timestampMs": 23450,
+   "confidence": null
+  },
+  {
+   "text": " possible.",
+   "startMs": 23770,
+   "endMs": 24490,
+   "timestampMs": 23770,
+   "confidence": null
+  },
+  {
+   "text": " But",
+   "startMs": 24490,
+   "endMs": 24650,
+   "timestampMs": 24490,
+   "confidence": null
+  },
+  {
+   "text": " through",
+   "startMs": 24650,
+   "endMs": 25050,
+   "timestampMs": 24650,
+   "confidence": null
+  },
+  {
+   "text": " a",
+   "startMs": 25210,
+   "endMs": 25290,
+   "timestampMs": 25210,
+   "confidence": null
+  },
+  {
+   "text": " computer",
+   "startMs": 25290,
+   "endMs": 25770,
+   "timestampMs": 25290,
+   "confidence": null
+  },
+  {
+   "text": " tablet",
+   "startMs": 25770,
+   "endMs": 26410,
+   "timestampMs": 25770,
+   "confidence": null
+  },
+  {
+   "text": " you",
+   "startMs": 26410,
+   "endMs": 26570,
+   "timestampMs": 26410,
+   "confidence": null
+  },
+  {
+   "text": " could.",
+   "startMs": 26570,
+   "endMs": 27150,
+   "timestampMs": 26570,
+   "confidence": null
+  },
+  {
+   "text": " By",
+   "startMs": 27150,
+   "endMs": 27390,
+   "timestampMs": 27150,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 27390,
+   "endMs": 27550,
+   "timestampMs": 27390,
+   "confidence": null
+  },
+  {
+   "text": " time",
+   "startMs": 27550,
+   "endMs": 27870,
+   "timestampMs": 27550,
+   "confidence": null
+  },
+  {
+   "text": " some",
+   "startMs": 27870,
+   "endMs": 28270,
+   "timestampMs": 27870,
+   "confidence": null
+  },
+  {
+   "text": " private",
+   "startMs": 28270,
+   "endMs": 28670,
+   "timestampMs": 28270,
+   "confidence": null
+  },
+  {
+   "text": " company",
+   "startMs": 28670,
+   "endMs": 29390,
+   "timestampMs": 28670,
+   "confidence": null
+  },
+  {
+   "text": " tried",
+   "startMs": 29390,
+   "endMs": 29790,
+   "timestampMs": 29390,
+   "confidence": null
+  },
+  {
+   "text": " license",
+   "startMs": 30180,
+   "endMs": 30656,
+   "timestampMs": 30180,
+   "confidence": null
+  },
+  {
+   "text": " it",
+   "startMs": 30656,
+   "endMs": 30816,
+   "timestampMs": 30656,
+   "confidence": null
+  },
+  {
+   "text": " and",
+   "startMs": 30816,
+   "endMs": 30976,
+   "timestampMs": 30816,
+   "confidence": null
+  },
+  {
+   "text": " they",
+   "startMs": 30976,
+   "endMs": 31136,
+   "timestampMs": 30976,
+   "confidence": null
+  },
+  {
+   "text": " made",
+   "startMs": 31136,
+   "endMs": 31456,
+   "timestampMs": 31136,
+   "confidence": null
+  },
+  {
+   "text": " some 40,000",
+   "startMs": 31456,
+   "endMs": 32416,
+   "timestampMs": 31456,
+   "confidence": null
+  },
+  {
+   "text": " units,",
+   "startMs": 32416,
+   "endMs": 32896,
+   "timestampMs": 32416,
+   "confidence": null
+  },
+  {
+   "text": " it",
+   "startMs": 32896,
+   "endMs": 33056,
+   "timestampMs": 32896,
+   "confidence": null
+  },
+  {
+   "text": " was",
+   "startMs": 33056,
+   "endMs": 33216,
+   "timestampMs": 33056,
+   "confidence": null
+  },
+  {
+   "text": " too",
+   "startMs": 33216,
+   "endMs": 33456,
+   "timestampMs": 33216,
+   "confidence": null
+  },
+  {
+   "text": " late",
+   "startMs": 33456,
+   "endMs": 33776,
+   "timestampMs": 33456,
+   "confidence": null
+  },
+  {
+   "text": " iPad",
+   "startMs": 33780,
+   "endMs": 34496,
+   "timestampMs": 33780,
+   "confidence": null
+  },
+  {
+   "text": " had",
+   "startMs": 34496,
+   "endMs": 34656,
+   "timestampMs": 34496,
+   "confidence": null
+  },
+  {
+   "text": " come",
+   "startMs": 34656,
+   "endMs": 34896,
+   "timestampMs": 34656,
+   "confidence": null
+  },
+  {
+   "text": " in,",
+   "startMs": 34896,
+   "endMs": 35376,
+   "timestampMs": 34896,
+   "confidence": null
+  },
+  {
+   "text": " they",
+   "startMs": 35376,
+   "endMs": 35696,
+   "timestampMs": 35376,
+   "confidence": null
+  },
+  {
+   "text": " just",
+   "startMs": 35696,
+   "endMs": 36176,
+   "timestampMs": 35696,
+   "confidence": null
+  },
+  {
+   "text": " took",
+   "startMs": 36176,
+   "endMs": 36576,
+   "timestampMs": 36176,
+   "confidence": null
+  },
+  {
+   "text": " over",
+   "startMs": 36576,
+   "endMs": 36816,
+   "timestampMs": 36576,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 36816,
+   "endMs": 36976,
+   "timestampMs": 36816,
+   "confidence": null
+  },
+  {
+   "text": " market.",
+   "startMs": 36976,
+   "endMs": 37536,
+   "timestampMs": 36976,
+   "confidence": null
+  },
+  {
+   "text": " I",
+   "startMs": 37540,
+   "endMs": 37696,
+   "timestampMs": 37540,
+   "confidence": null
+  },
+  {
+   "text": " told",
+   "startMs": 37696,
+   "endMs": 37936,
+   "timestampMs": 37696,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 37936,
+   "endMs": 38016,
+   "timestampMs": 37936,
+   "confidence": null
+  },
+  {
+   "text": " government",
+   "startMs": 38016,
+   "endMs": 38816,
+   "timestampMs": 38016,
+   "confidence": null
+  },
+  {
+   "text": " if",
+   "startMs": 38816,
+   "endMs": 39056,
+   "timestampMs": 38816,
+   "confidence": null
+  },
+  {
+   "text": " you",
+   "startMs": 39056,
+   "endMs": 39296,
+   "timestampMs": 39056,
+   "confidence": null
+  },
+  {
+   "text": " guys",
+   "startMs": 39296,
+   "endMs": 39536,
+   "timestampMs": 39296,
+   "confidence": null
+  },
+  {
+   "text": " had",
+   "startMs": 39536,
+   "endMs": 39776,
+   "timestampMs": 39536,
+   "confidence": null
+  },
+  {
+   "text": " procured",
+   "startMs": 39776,
+   "endMs": 40336,
+   "timestampMs": 39776,
+   "confidence": null
+  },
+  {
+   "text": " a",
+   "startMs": 40336,
+   "endMs": 40416,
+   "timestampMs": 40336,
+   "confidence": null
+  },
+  {
+   "text": " million",
+   "startMs": 40416,
+   "endMs": 40736,
+   "timestampMs": 40416,
+   "confidence": null
+  },
+  {
+   "text": " of",
+   "startMs": 40736,
+   "endMs": 40896,
+   "timestampMs": 40736,
+   "confidence": null
+  },
+  {
+   "text": " those",
+   "startMs": 40896,
+   "endMs": 41136,
+   "timestampMs": 40896,
+   "confidence": null
+  },
+  {
+   "text": " tablets,",
+   "startMs": 41136,
+   "endMs": 41856,
+   "timestampMs": 41136,
+   "confidence": null
+  },
+  {
+   "text": " and",
+   "startMs": 41860,
+   "endMs": 42096,
+   "timestampMs": 41860,
+   "confidence": null
+  },
+  {
+   "text": " it",
+   "startMs": 42096,
+   "endMs": 42335,
+   "timestampMs": 42096,
+   "confidence": null
+  },
+  {
+   "text": " would",
+   "startMs": 42335,
+   "endMs": 42576,
+   "timestampMs": 42335,
+   "confidence": null
+  },
+  {
+   "text": " have",
+   "startMs": 42576,
+   "endMs": 42736,
+   "timestampMs": 42576,
+   "confidence": null
+  },
+  {
+   "text": " been",
+   "startMs": 42736,
+   "endMs": 43136,
+   "timestampMs": 42736,
+   "confidence": null
+  },
+  {
+   "text": " something",
+   "startMs": 43136,
+   "endMs": 43615,
+   "timestampMs": 43136,
+   "confidence": null
+  },
+  {
+   "text": " that",
+   "startMs": 43615,
+   "endMs": 43856,
+   "timestampMs": 43615,
+   "confidence": null
+  },
+  {
+   "text": " even",
+   "startMs": 43856,
+   "endMs": 44256,
+   "timestampMs": 43856,
+   "confidence": null
+  },
+  {
+   "text": " iPad",
+   "startMs": 44256,
+   "endMs": 44896,
+   "timestampMs": 44256,
+   "confidence": null
+  },
+  {
+   "text": " would",
+   "startMs": 44896,
+   "endMs": 44976,
+   "timestampMs": 44896,
+   "confidence": null
+  },
+  {
+   "text": " have",
+   "startMs": 44976,
+   "endMs": 45136,
+   "timestampMs": 44976,
+   "confidence": null
+  },
+  {
+   "text": " licensed.",
+   "startMs": 45136,
+   "endMs": 45690,
+   "timestampMs": 45136,
+   "confidence": null
+  }
+ ],
+ "hook": {
+  "text": "India built a tablet in 2000,\nbefore the iPad.\nSo what went wrong?",
+  "style": "box",
+  "durationMs": 3900
+ },
+ "speakers": [
+  {
+   "name": "Kiran Mazumdar-Shaw",
+   "role": "Founder, Biocon",
+   "fromMs": 400,
+   "durationMs": 3500
+  }
+ ],
+ "emphasis": [
+  {
+   "text": "MISSED\nTHE BOAT",
+   "startMs": 6000,
+   "endMs": 7420
+  },
+  {
+   "text": "TOO LATE",
+   "startMs": 33150,
+   "endMs": 34400
+  }
+ ],
+ "quoteCards": [],
+ "endCard": true
+}

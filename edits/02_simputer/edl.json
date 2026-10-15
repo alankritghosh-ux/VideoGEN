@@ -1,0 +1,102 @@
+{
+ "source": "input/02_simputer.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "in": 25.85,
+   "out": 28.47,
+   "zoom": 1.5,
+   "cx": 0.556,
+   "cy": 0.339,
+   "note": "COLD OPEN: this pre-dated the iPad"
+  },
+  {
+   "in": 30.31,
+   "out": 35.11,
+   "zoom": 1.62,
+   "cx": 0.573,
+   "cy": 0.363,
+   "note": "pre-dated everything you can think of. But we missed the boat."
+  },
+  {
+   "in": 35.11,
+   "out": 38.45,
+   "zoom": 1.5,
+   "cx": 0.598,
+   "cy": 0.339,
+   "note": "Why? Because they didn't know how to commercialise it."
+  },
+  {
+   "in": 8.02,
+   "out": 9.35,
+   "zoom": 1.62,
+   "cx": 0.41,
+   "cy": 0.363,
+   "note": "Simputer was the (old name tag gone by 7.98, onset 8.14)"
+  },
+  {
+   "in": 9.91,
+   "out": 17.11,
+   "zoom": 1.5,
+   "cx": 0.382,
+   "cy": 0.339,
+   "note": "world's first handheld multilingual GPRS-connected computer (stutter 'first' cut)"
+  },
+  {
+   "in": 17.59,
+   "out": 25.45,
+   "zoom": 1.62,
+   "cx": 0.56,
+   "cy": 0.363,
+   "note": "How do you teach standardised education to millions? Not possible. But through a tablet you could."
+  },
+  {
+   "in": 39.67,
+   "out": 40.39,
+   "zoom": 1.5,
+   "cx": 0.597,
+   "cy": 0.339,
+   "note": "By the time ('they' cut)"
+  },
+  {
+   "in": 40.79,
+   "out": 43.1,
+   "zoom": 1.62,
+   "cx": 0.613,
+   "cy": 0.363,
+   "note": "some private company tried to"
+  },
+  {
+   "in": 44.49,
+   "out": 48.09,
+   "zoom": 1.5,
+   "cx": 0.517,
+   "cy": 0.339,
+   "note": "license it, 40,000 units, it was too late ('because Palm Pilots had come in' cut)"
+  },
+  {
+   "in": 51.29,
+   "out": 55.05,
+   "zoom": 1.62,
+   "cx": 0.498,
+   "cy": 0.363,
+   "note": "iPad had come in, they just took over the market (Richa cutaway 53.0-55.04)"
+  },
+  {
+   "in": 55.37,
+   "out": 59.69,
+   "zoom": 1.5,
+   "cx": 0.506,
+   "cy": 0.339,
+   "note": "I told the government: if you had procured a million of those tablets"
+  },
+  {
+   "in": 63.77,
+   "out": 67.6,
+   "zoom": 1.62,
+   "cx": 0.471,
+   "cy": 0.363,
+   "note": "it would have been something that even iPad would have licensed"
+  }
+ ]
+}
