@@ -1,0 +1,14 @@
+{
+ "source": "work/kumar/precut_5793.mp4",
+ "fps": 30,
+ "src_offset": 0.0,
+ "segments": [
+  {"in": 0.10, "out": 0.75, "zoom": 1.0,  "cx": 0.5, "cy": 0.40, "note": "So don't"},
+  {"in": 1.70, "out": 4.68, "zoom": 1.12, "cx": 0.5, "cy": 0.37, "note": "juggle multiple balls. So that means"},
+  {"in": 5.88, "out": 10.30, "zoom": 1.0,  "cx": 0.5, "cy": 0.40, "note": "your focus: you are starting up and building product"},
+  {"in": 11.05, "out": 16.25, "zoom": 1.12, "cx": 0.5, "cy": 0.37, "note": "we want the product to be successful. What is the sign of success of a product?"},
+  {"in": 16.72, "out": 20.55, "zoom": 1.0,  "cx": 0.5, "cy": 0.40, "note": "customer adoption and the customer's willingness to pay"},
+  {"in": 22.00, "out": 24.85, "zoom": 1.12, "cx": 0.5, "cy": 0.37, "note": "and the customer's willingness to continue to use it"},
+  {"in": 28.85, "out": 32.15, "zoom": 1.0,  "cx": 0.5, "cy": 0.40, "note": "for me, that is the only thing I optimise"}
+ ]
+}

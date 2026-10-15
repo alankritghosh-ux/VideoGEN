@@ -1,0 +1,8 @@
+{
+ "source": "work/kumar/precut_5790.mp4",
+ "fps": 30,
+ "src_offset": 0.0,
+ "segments": [
+  {"in": 0.55, "out": 8.45, "zoom": 1.0, "cx": 0.5, "cy": 0.40, "note": "C5790 host asks (Kumar listening): roots should be stronger to become a larger tree, so what's your advice?"}
+ ]
+}
