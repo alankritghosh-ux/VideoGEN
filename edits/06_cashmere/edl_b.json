@@ -1,0 +1,23 @@
+{
+ "source": "work/cashmere/precut_5776.mp4",
+ "fps": 30,
+ "src_offset": 0.0,
+ "segments": [
+  {
+   "in": 0.3,
+   "out": 8.45,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "C5776: digital twin of the physical material at point of origin, virtual digital supply chain, even after seven years"
+  },
+  {
+   "in": 9.0,
+   "out": 12.0,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.4,
+   "note": "C5776: no one has been able to launch that. No way."
+  }
+ ]
+}

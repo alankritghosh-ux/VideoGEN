@@ -90,30 +90,6 @@
    "cx": 0.5,
    "cy": 0.38,
    "note": "SOLUTION: the key idea was we created what we call"
-  },
-  {
-   "in": 86.5,
-   "out": 93.45,
-   "zoom": 1.0,
-   "cx": 0.5,
-   "cy": 0.42,
-   "note": "a fibre coin, a digital token; we digitise the cotton plant"
-  },
-  {
-   "in": 93.88,
-   "out": 96.6,
-   "zoom": 1.14,
-   "cx": 0.5,
-   "cy": 0.38,
-   "note": "at the point of origin so one kilogram of"
-  },
-  {
-   "in": 97.3,
-   "out": 100.75,
-   "zoom": 1.0,
-   "cx": 0.5,
-   "cy": 0.42,
-   "note": "cotton at origin becomes one fibre coin"
   }
  ]
 }
