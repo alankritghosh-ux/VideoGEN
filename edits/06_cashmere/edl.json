@@ -1,0 +1,119 @@
+{
+ "source": "work/cashmere/precut.mp4",
+ "fps": 30,
+ "src_offset": 14.0,
+ "segments": [
+  {
+   "in": 63.6,
+   "out": 69.6,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "COLD OPEN: up to ten times more cashmere claimed in coats, jackets, pullovers"
+  },
+  {
+   "in": 70.05,
+   "out": 71.85,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "than the number of cashmere goats"
+  },
+  {
+   "in": 73.9,
+   "out": 75.6,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "now how is it even possible?"
+  },
+  {
+   "in": 17.45,
+   "out": 25.25,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "SETUP: textile looks simple, everyone uses it, very complex, eight to nine"
+  },
+  {
+   "in": 25.5,
+   "out": 31.95,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "steps of transformation before a cotton plant becomes a lungi"
+  },
+  {
+   "in": 41.0,
+   "out": 42.8,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "and what happens is there's lot of"
+  },
+  {
+   "in": 43.0,
+   "out": 46.8,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "fraud and corruption; talk to the organic cotton industry"
+  },
+  {
+   "in": 47.25,
+   "out": 51.75,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "five times more organic cotton claimed in finished product"
+  },
+  {
+   "in": 52.38,
+   "out": 54.4,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "than the number of organic cotton farms"
+  },
+  {
+   "in": 54.82,
+   "out": 57.15,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "scratching your head, how is it possible?"
+  },
+  {
+   "in": 82.85,
+   "out": 85.55,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "SOLUTION: the key idea was we created what we call"
+  },
+  {
+   "in": 86.5,
+   "out": 93.45,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "a fibre coin, a digital token; we digitise the cotton plant"
+  },
+  {
+   "in": 93.88,
+   "out": 96.6,
+   "zoom": 1.14,
+   "cx": 0.5,
+   "cy": 0.38,
+   "note": "at the point of origin so one kilogram of"
+  },
+  {
+   "in": 97.3,
+   "out": 100.75,
+   "zoom": 1.0,
+   "cx": 0.5,
+   "cy": 0.42,
+   "note": "cotton at origin becomes one fibre coin"
+  }
+ ]
+}
