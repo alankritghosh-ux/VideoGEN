@@ -1,6 +1,6 @@
 {
  "clip": "clips/07_kumar_focus_cut.mp4",
- "durationSec": 31.13,
+ "durationSec": 31.18,
  "captions": [
   {
    "text": "For",
@@ -144,9 +144,9 @@
   },
   {
    "text": " tree,",
-   "startMs": 5216,
+   "startMs": 5350,
    "endMs": 5616,
-   "timestampMs": 5216,
+   "timestampMs": 5350,
    "confidence": null
   },
   {
@@ -186,508 +186,514 @@
   },
   {
    "text": " So",
-   "startMs": 7950,
-   "endMs": 8110,
-   "timestampMs": 7950,
+   "startMs": 8000,
+   "endMs": 8160,
+   "timestampMs": 8000,
    "confidence": null
   },
   {
    "text": " don't",
-   "startMs": 8110,
-   "endMs": 8510,
-   "timestampMs": 8110,
+   "startMs": 8160,
+   "endMs": 8560,
+   "timestampMs": 8160,
    "confidence": null
   },
   {
    "text": " juggle",
-   "startMs": 8600,
-   "endMs": 9000,
-   "timestampMs": 8600,
+   "startMs": 8650,
+   "endMs": 9050,
+   "timestampMs": 8650,
    "confidence": null
   },
   {
    "text": " multiple",
-   "startMs": 9320,
-   "endMs": 9640,
-   "timestampMs": 9320,
+   "startMs": 9370,
+   "endMs": 9690,
+   "timestampMs": 9370,
    "confidence": null
   },
   {
    "text": " balls.",
-   "startMs": 9640,
-   "endMs": 10520,
-   "timestampMs": 9640,
+   "startMs": 9690,
+   "endMs": 10570,
+   "timestampMs": 9690,
    "confidence": null
   },
   {
    "text": " So",
-   "startMs": 10520,
-   "endMs": 10760,
-   "timestampMs": 10520,
+   "startMs": 10570,
+   "endMs": 10810,
+   "timestampMs": 10570,
    "confidence": null
   },
   {
    "text": " that",
-   "startMs": 10760,
-   "endMs": 11000,
-   "timestampMs": 10760,
+   "startMs": 10810,
+   "endMs": 11050,
+   "timestampMs": 10810,
    "confidence": null
   },
   {
    "text": " means",
-   "startMs": 11000,
-   "endMs": 11480,
-   "timestampMs": 11000,
+   "startMs": 11050,
+   "endMs": 11530,
+   "timestampMs": 11050,
    "confidence": null
   },
   {
    "text": " your",
-   "startMs": 11560,
-   "endMs": 11960,
-   "timestampMs": 11560,
+   "startMs": 11610,
+   "endMs": 12010,
+   "timestampMs": 11610,
    "confidence": null
   },
   {
    "text": " focus",
-   "startMs": 11960,
-   "endMs": 12600,
-   "timestampMs": 11960,
+   "startMs": 12010,
+   "endMs": 12650,
+   "timestampMs": 12010,
    "confidence": null
   },
   {
    "text": " you",
-   "startMs": 12600,
-   "endMs": 12760,
-   "timestampMs": 12600,
+   "startMs": 12650,
+   "endMs": 12810,
+   "timestampMs": 12650,
    "confidence": null
   },
   {
    "text": " know",
-   "startMs": 12760,
-   "endMs": 13240,
-   "timestampMs": 12760,
+   "startMs": 12810,
+   "endMs": 13290,
+   "timestampMs": 12810,
    "confidence": null
   },
   {
    "text": " you",
-   "startMs": 13240,
-   "endMs": 13480,
-   "timestampMs": 13240,
+   "startMs": 13290,
+   "endMs": 13530,
+   "timestampMs": 13290,
    "confidence": null
   },
   {
    "text": " are",
-   "startMs": 13480,
-   "endMs": 13640,
-   "timestampMs": 13480,
+   "startMs": 13530,
+   "endMs": 13690,
+   "timestampMs": 13530,
    "confidence": null
   },
   {
    "text": " starting",
-   "startMs": 13640,
-   "endMs": 14120,
-   "timestampMs": 13640,
+   "startMs": 13690,
+   "endMs": 14170,
+   "timestampMs": 13690,
    "confidence": null
   },
   {
    "text": " up",
-   "startMs": 14120,
-   "endMs": 14360,
-   "timestampMs": 14120,
+   "startMs": 14170,
+   "endMs": 14410,
+   "timestampMs": 14170,
    "confidence": null
   },
   {
    "text": " and",
-   "startMs": 14360,
-   "endMs": 14600,
-   "timestampMs": 14360,
+   "startMs": 14410,
+   "endMs": 14650,
+   "timestampMs": 14410,
    "confidence": null
   },
   {
    "text": " building",
-   "startMs": 14600,
-   "endMs": 15160,
-   "timestampMs": 14600,
+   "startMs": 14650,
+   "endMs": 15210,
+   "timestampMs": 14650,
    "confidence": null
   },
   {
    "text": " product.",
-   "startMs": 15160,
-   "endMs": 15874,
-   "timestampMs": 15160,
+   "startMs": 15210,
+   "endMs": 15924,
+   "timestampMs": 15210,
    "confidence": null
   },
   {
    "text": " Because",
-   "startMs": 15994,
-   "endMs": 16314,
-   "timestampMs": 15994,
+   "startMs": 16044,
+   "endMs": 16364,
+   "timestampMs": 16044,
    "confidence": null
   },
   {
    "text": " we",
-   "startMs": 16314,
-   "endMs": 16474,
-   "timestampMs": 16314,
+   "startMs": 16364,
+   "endMs": 16524,
+   "timestampMs": 16364,
    "confidence": null
   },
   {
    "text": " want",
-   "startMs": 16474,
-   "endMs": 16714,
-   "timestampMs": 16474,
+   "startMs": 16524,
+   "endMs": 16764,
+   "timestampMs": 16524,
    "confidence": null
   },
   {
    "text": " the",
-   "startMs": 16714,
-   "endMs": 16874,
-   "timestampMs": 16714,
+   "startMs": 16764,
+   "endMs": 16924,
+   "timestampMs": 16764,
    "confidence": null
   },
   {
    "text": " product",
-   "startMs": 16874,
-   "endMs": 17194,
-   "timestampMs": 16874,
+   "startMs": 16924,
+   "endMs": 17244,
+   "timestampMs": 16924,
    "confidence": null
   },
   {
    "text": " to",
-   "startMs": 17194,
-   "endMs": 17354,
-   "timestampMs": 17194,
+   "startMs": 17244,
+   "endMs": 17404,
+   "timestampMs": 17244,
    "confidence": null
   },
   {
    "text": " be",
-   "startMs": 17354,
-   "endMs": 17514,
-   "timestampMs": 17354,
+   "startMs": 17404,
+   "endMs": 17564,
+   "timestampMs": 17404,
    "confidence": null
   },
   {
    "text": " successful.",
-   "startMs": 17514,
-   "endMs": 18234,
-   "timestampMs": 17514,
+   "startMs": 17564,
+   "endMs": 18284,
+   "timestampMs": 17564,
    "confidence": null
   },
   {
    "text": " So",
-   "startMs": 18234,
-   "endMs": 18474,
-   "timestampMs": 18234,
+   "startMs": 18284,
+   "endMs": 18524,
+   "timestampMs": 18284,
    "confidence": null
   },
   {
    "text": " what",
-   "startMs": 18474,
-   "endMs": 18634,
-   "timestampMs": 18474,
+   "startMs": 18524,
+   "endMs": 18684,
+   "timestampMs": 18524,
    "confidence": null
   },
   {
    "text": " is",
-   "startMs": 18634,
-   "endMs": 18874,
-   "timestampMs": 18634,
+   "startMs": 18684,
+   "endMs": 18924,
+   "timestampMs": 18684,
    "confidence": null
   },
   {
    "text": " the",
-   "startMs": 18874,
-   "endMs": 18954,
-   "timestampMs": 18874,
+   "startMs": 18924,
+   "endMs": 19004,
+   "timestampMs": 18924,
    "confidence": null
   },
   {
    "text": " sign",
-   "startMs": 18954,
-   "endMs": 19274,
-   "timestampMs": 18954,
+   "startMs": 19004,
+   "endMs": 19324,
+   "timestampMs": 19004,
    "confidence": null
   },
   {
    "text": " of",
-   "startMs": 19274,
-   "endMs": 19514,
-   "timestampMs": 19274,
+   "startMs": 19324,
+   "endMs": 19564,
+   "timestampMs": 19324,
    "confidence": null
   },
   {
    "text": " success",
-   "startMs": 19514,
-   "endMs": 19914,
-   "timestampMs": 19514,
+   "startMs": 19564,
+   "endMs": 19964,
+   "timestampMs": 19564,
    "confidence": null
   },
   {
    "text": " of",
-   "startMs": 19914,
-   "endMs": 20074,
-   "timestampMs": 19914,
+   "startMs": 19964,
+   "endMs": 20124,
+   "timestampMs": 19964,
    "confidence": null
   },
   {
    "text": " a",
-   "startMs": 20074,
-   "endMs": 20234,
-   "timestampMs": 20074,
+   "startMs": 20124,
+   "endMs": 20284,
+   "timestampMs": 20124,
    "confidence": null
   },
   {
    "text": " product?",
-   "startMs": 20234,
-   "endMs": 21076,
-   "timestampMs": 20234,
+   "startMs": 20284,
+   "endMs": 21126,
+   "timestampMs": 20284,
    "confidence": null
   },
   {
    "text": " the",
-   "startMs": 21204,
-   "endMs": 21364,
-   "timestampMs": 21204,
+   "startMs": 21254,
+   "endMs": 21414,
+   "timestampMs": 21254,
    "confidence": null
   },
   {
    "text": " customer",
-   "startMs": 21364,
-   "endMs": 21844,
-   "timestampMs": 21364,
+   "startMs": 21414,
+   "endMs": 21894,
+   "timestampMs": 21414,
    "confidence": null
   },
   {
    "text": " adoption",
-   "startMs": 21844,
-   "endMs": 22564,
-   "timestampMs": 21844,
+   "startMs": 21894,
+   "endMs": 22614,
+   "timestampMs": 21894,
    "confidence": null
   },
   {
    "text": " and",
-   "startMs": 22564,
-   "endMs": 22804,
-   "timestampMs": 22564,
+   "startMs": 22614,
+   "endMs": 22854,
+   "timestampMs": 22614,
    "confidence": null
   },
   {
    "text": " the",
-   "startMs": 22804,
-   "endMs": 22884,
-   "timestampMs": 22804,
+   "startMs": 22854,
+   "endMs": 22934,
+   "timestampMs": 22854,
    "confidence": null
   },
   {
    "text": " customers",
-   "startMs": 22884,
-   "endMs": 23524,
-   "timestampMs": 22884,
+   "startMs": 22934,
+   "endMs": 23574,
+   "timestampMs": 22934,
    "confidence": null
   },
   {
    "text": " willingness",
-   "startMs": 23524,
-   "endMs": 24084,
-   "timestampMs": 23524,
+   "startMs": 23574,
+   "endMs": 24134,
+   "timestampMs": 23574,
    "confidence": null
   },
   {
    "text": " to",
-   "startMs": 24084,
-   "endMs": 24244,
-   "timestampMs": 24084,
+   "startMs": 24134,
+   "endMs": 24294,
+   "timestampMs": 24134,
    "confidence": null
   },
   {
    "text": " pay.",
-   "startMs": 24244,
-   "endMs": 24926,
-   "timestampMs": 24244,
+   "startMs": 24294,
+   "endMs": 24976,
+   "timestampMs": 24294,
    "confidence": null
   },
   {
    "text": " and",
-   "startMs": 25034,
-   "endMs": 25274,
-   "timestampMs": 25034,
+   "startMs": 25084,
+   "endMs": 25324,
+   "timestampMs": 25084,
    "confidence": null
   },
   {
    "text": " the",
-   "startMs": 25274,
-   "endMs": 25354,
-   "timestampMs": 25274,
+   "startMs": 25324,
+   "endMs": 25404,
+   "timestampMs": 25324,
    "confidence": null
   },
   {
    "text": " customers'",
-   "startMs": 25354,
-   "endMs": 25914,
-   "timestampMs": 25354,
+   "startMs": 25404,
+   "endMs": 25964,
+   "timestampMs": 25404,
    "confidence": null
   },
   {
    "text": " willingness",
-   "startMs": 25914,
-   "endMs": 26474,
-   "timestampMs": 25914,
+   "startMs": 25964,
+   "endMs": 26524,
+   "timestampMs": 25964,
    "confidence": null
   },
   {
    "text": " to",
-   "startMs": 26474,
-   "endMs": 26634,
-   "timestampMs": 26474,
+   "startMs": 26524,
+   "endMs": 26684,
+   "timestampMs": 26524,
    "confidence": null
   },
   {
    "text": " continue",
-   "startMs": 26634,
-   "endMs": 26954,
-   "timestampMs": 26634,
+   "startMs": 26684,
+   "endMs": 27004,
+   "timestampMs": 26684,
    "confidence": null
   },
   {
    "text": " to",
-   "startMs": 26954,
-   "endMs": 27114,
-   "timestampMs": 26954,
+   "startMs": 27004,
+   "endMs": 27164,
+   "timestampMs": 27004,
    "confidence": null
   },
   {
    "text": " use",
-   "startMs": 27114,
-   "endMs": 27354,
-   "timestampMs": 27114,
+   "startMs": 27164,
+   "endMs": 27404,
+   "timestampMs": 27164,
    "confidence": null
   },
   {
    "text": " it.",
-   "startMs": 27354,
-   "endMs": 27764,
-   "timestampMs": 27354,
+   "startMs": 27404,
+   "endMs": 27814,
+   "timestampMs": 27404,
    "confidence": null
   },
   {
    "text": " You",
-   "startMs": 27882,
-   "endMs": 27962,
-   "timestampMs": 27882,
+   "startMs": 27932,
+   "endMs": 28012,
+   "timestampMs": 27932,
    "confidence": null
   },
   {
    "text": " know,",
-   "startMs": 27962,
-   "endMs": 28202,
-   "timestampMs": 27962,
+   "startMs": 28012,
+   "endMs": 28252,
+   "timestampMs": 28012,
    "confidence": null
   },
   {
    "text": " for",
-   "startMs": 28202,
-   "endMs": 28442,
-   "timestampMs": 28202,
+   "startMs": 28252,
+   "endMs": 28492,
+   "timestampMs": 28252,
    "confidence": null
   },
   {
    "text": " for",
-   "startMs": 28442,
-   "endMs": 28682,
-   "timestampMs": 28442,
+   "startMs": 28492,
+   "endMs": 28732,
+   "timestampMs": 28492,
    "confidence": null
   },
   {
    "text": " me,",
-   "startMs": 28682,
-   "endMs": 29002,
-   "timestampMs": 28682,
+   "startMs": 28732,
+   "endMs": 29052,
+   "timestampMs": 28732,
    "confidence": null
   },
   {
    "text": " that",
-   "startMs": 29002,
-   "endMs": 29162,
-   "timestampMs": 29002,
+   "startMs": 29052,
+   "endMs": 29212,
+   "timestampMs": 29052,
    "confidence": null
   },
   {
    "text": " is",
-   "startMs": 29162,
-   "endMs": 29322,
-   "timestampMs": 29162,
+   "startMs": 29212,
+   "endMs": 29372,
+   "timestampMs": 29212,
    "confidence": null
   },
   {
    "text": " the",
-   "startMs": 29322,
-   "endMs": 29402,
-   "timestampMs": 29322,
+   "startMs": 29372,
+   "endMs": 29452,
+   "timestampMs": 29372,
    "confidence": null
   },
   {
    "text": " only",
-   "startMs": 29402,
-   "endMs": 29642,
-   "timestampMs": 29402,
+   "startMs": 29452,
+   "endMs": 29692,
+   "timestampMs": 29452,
    "confidence": null
   },
   {
    "text": " thing",
-   "startMs": 29642,
-   "endMs": 29802,
-   "timestampMs": 29642,
+   "startMs": 29692,
+   "endMs": 29852,
+   "timestampMs": 29692,
    "confidence": null
   },
   {
    "text": " I",
-   "startMs": 29802,
-   "endMs": 30202,
-   "timestampMs": 29802,
+   "startMs": 29852,
+   "endMs": 30252,
+   "timestampMs": 29852,
    "confidence": null
   },
   {
    "text": " optimise.",
-   "startMs": 30202,
-   "endMs": 31082,
-   "timestampMs": 30202,
+   "startMs": 30252,
+   "endMs": 31132,
+   "timestampMs": 30252,
    "confidence": null
   }
  ],
  "hook": {
-  "text": "20 years building GoFrugal.\nHe optimises for one thing.",
+  "text": "He co-founded Zoho, then built GoFrugal.\nHe optimises for one thing.",
   "style": "box",
-  "durationMs": 3400
+  "durationMs": 3600
  },
  "speakers": [
   {
    "name": "Kumar Vembu",
-   "role": "Founder, GoFrugal",
+   "role": "Co-founder Zoho, Founder GoFrugal",
    "fromMs": 400,
-   "durationMs": 3000
+   "durationMs": 3200
+  },
+  {
+   "name": "Shifa Garg",
+   "role": "Campus Fund",
+   "fromMs": 5616,
+   "durationMs": 2300
   },
   {
    "name": "Kumar Vembu",
-   "role": "Founder, GoFrugal",
-   "fromMs": 18474,
+   "role": "Co-founder Zoho, Founder GoFrugal",
+   "fromMs": 18524,
    "durationMs": 2600
   }
  ],
  "emphasis": [
   {
    "text": "DON'T JUGGLE",
-   "startMs": 8600,
-   "endMs": 10000
+   "startMs": 8650,
+   "endMs": 10050
   },
   {
    "text": "WILLING\nTO PAY",
-   "startMs": 23524,
-   "endMs": 25024
+   "startMs": 23574,
+   "endMs": 25074
   },
   {
    "text": "KEEP\nUSING IT",
-   "startMs": 26474,
-   "endMs": 27974
+   "startMs": 26524,
+   "endMs": 28024
   }
  ],
  "quoteCards": [],
