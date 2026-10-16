@@ -2,7 +2,7 @@
 
 Source: `02_simputer.mp4` (Drive folder 1V2BiCmTRP50jxOX1hmuyEHXklwtvRDX6), 67.6 s, 25 fps. Already edited with a
 burned-in hook card (0-3.9 s), name tag (3.9-8.0 s) and word captions (y 1300-1395).
-Output: `output/02_simputer_viral.mp4`, 47.8 s (45.2 s cut + 2.5 s end card), 1080x1920 @ 30 fps, -14.1 LUFS.
+Output: `output/02_simputer_viral.mp4`, 47.7 s (45.2 s cut + 2.5 s end card), 1080x1920 @ 30 fps, -14.1 LUFS.
 
 Rebuild:
     python tools/transcribe.py input/02_simputer.mp4 --out work/simputer/tr
@@ -28,7 +28,7 @@ Changes vs the original:
   the cut (`tools/remap_captions.py`). Cost: ~1.5x upscale, visibly softer than the source on a monitor, fine on a phone.
 - Dropped: the "Can you imagine" lead-in and "How do you teach standardised education to millions" (a tangent).
   67.6 s -> 45.2 s.
-- Old name tag ends at 7.98 s and "Simputer" starts at 8.14 s, so that segment starts at 8.00.
+- Old name tag ends at 7.98 s and "Simputer" starts at 8.14 s, so that segment starts at 8.08 (input seeking can land a frame early; at 8.00 the tag ghosted through the dissolve).
 - Hook box "India built a tablet in 2000, before the iPad. So what went wrong?", name lower-third, stamps
   MISSED THE BOAT and TOO LATE, end card.
 - Motion-interpolated 25->30 fps (`minterpolate` mci) was tried and rejected: it smears her hands. Frames are duplicated.
@@ -41,3 +41,6 @@ Suggested description:
   From our Campus Fund fireside chat at Biocon with founder Richa Bajpai.
   Save this for the next time someone tells you the product is the hard part.
   #Shorts #Startups #StudentFounders #CampusFund #Simputer #MakeInIndia
+
+Caption pages never straddle a join: `pageBreaksMs` in props.json (the join times from the timeline) forces a new
+page there (Reel prop added for this edit).

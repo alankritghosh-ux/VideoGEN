@@ -35,6 +35,8 @@ export type ReelProps = {
   emphasis?: Emphasis[];
   quoteCards?: QuoteCard[];
   endCard?: boolean;
+  // Force a new caption page at these times (the cut's joins), so a page never straddles an edit.
+  pageBreaksMs?: number[];
 };
 
 export const END_CARD_SEC = 2.5;
@@ -208,12 +210,17 @@ const EndCard: React.FC = () => {
   );
 };
 
-export const Reel: React.FC<ReelProps> = ({clip, durationSec, captions, hook, speakers = [], emphasis = [], quoteCards = [], endCard}) => {
+export const Reel: React.FC<ReelProps> = ({clip, durationSec, captions, hook, speakers = [], emphasis = [], quoteCards = [], endCard, pageBreaksMs = []}) => {
   const {fps} = useVideoConfig();
-  const {pages} = useMemo(
-    () => createTikTokStyleCaptions({captions, combineTokensWithinMilliseconds: 700}),
-    [captions],
-  );
+  const pages = useMemo(() => {
+    const groups: Caption[][] = [[]];
+    captions.forEach((c, i) => {
+      const prev = captions[i - 1];
+      if (prev && pageBreaksMs.some((b) => prev.startMs < b && c.startMs >= b)) groups.push([]);
+      groups[groups.length - 1].push(c);
+    });
+    return groups.flatMap((g) => createTikTokStyleCaptions({captions: g, combineTokensWithinMilliseconds: 700}).pages);
+  }, [captions, pageBreaksMs]);
   const clipFrames = Math.round(durationSec * fps);
   // Captions hide (per frame) while an emphasis stamp or quote card is on screen.
   const covered = (ms: number) =>
