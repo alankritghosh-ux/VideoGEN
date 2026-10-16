@@ -6,7 +6,7 @@
    "in": 25.85,
    "out": 38.16,
    "zoom": 1.5,
-   "zoom_to": 1.59,
+   "zoom_to": 1.56,
    "cx_keys": [
     [
      25.85,
@@ -126,25 +126,39 @@
     ]
    ],
    "cy": 0.337,
-   "cy_to": 0.356,
+   "cy_to": 0.349,
    "note": "COLD OPEN: this predated the iPad, the Palm Pilot, everything. But we missed the boat. Why? Because they didn't know how to commercialise"
   },
   {
    "in": 38.16,
    "out": 38.6,
-   "freeze_at": 38.12,
-   "zoom": 1.59,
-   "zoom_to": 1.61,
-   "cx": 0.6,
-   "cy": 0.356,
-   "fade_out": 0.05,
-   "note": "'it.' lands on a held frame: the source punches in at 38.16, on the last word; the hold replaces that cut"
+   "video_in": 53.15,
+   "zoom": 1.5,
+   "zoom_to": 1.52,
+   "cx": 0.49,
+   "cx_to": 0.49,
+   "cy": 0.337,
+   "cy_to": 0.341,
+   "note": "REACTION SHOT (Richa listening) under 'it.' - the source punches in at 38.16 on the last word; the cutaway bridges it"
+  },
+  {
+   "in": 38.6,
+   "out": 38.8,
+   "video_in": 53.59,
+   "zoom": 1.52,
+   "zoom_to": 1.53,
+   "cx": 0.49,
+   "cx_to": 0.49,
+   "cy": 0.341,
+   "cy_to": 0.343,
+   "note": "reaction shot continues over the breath"
   },
   {
    "in": 8.08,
    "out": 16.84,
-   "zoom": 1.5,
-   "zoom_to": 1.57,
+   "punch_from": 1.7,
+   "zoom": 1.62,
+   "zoom_to": 1.58,
    "cx_keys": [
     [
      8.08,
@@ -223,27 +237,40 @@
      0.356
     ]
    ],
-   "cy": 0.337,
-   "cy_to": 0.352,
-   "note": "Simputer was the first, world's first handheld multilingual GPRS-connected compu- (old tag gone at 7.98 + 2-frame seek margin)",
-   "dissolve": 0.2
+   "cy": 0.361,
+   "cy_to": 0.354,
+   "note": "PUNCH IN: Simputer was the first, world's first handheld multilingual GPRS-connected compu- (old tag gone at 7.98 + 2-frame seek margin)"
   },
   {
    "in": 16.84,
    "out": 17.21,
-   "freeze_at": 16.8,
-   "zoom": 1.57,
-   "zoom_to": 1.59,
-   "cx": 0.356,
-   "cy": 0.352,
-   "fade_out": 0.05,
-   "note": "-ter. on a held frame (source punch-in at 16.84); 'Yes.' at 17.24 cut"
+   "video_in": 54.2,
+   "zoom": 1.5,
+   "zoom_to": 1.52,
+   "cx": 0.49,
+   "cx_to": 0.49,
+   "cy": 0.337,
+   "cy_to": 0.341,
+   "note": "REACTION SHOT under '-ter.' (source punch-in at 16.84 mid-word); 'Yes.' at 17.24 cut"
+  },
+  {
+   "in": 39.25,
+   "out": 39.45,
+   "video_in": 54.57,
+   "zoom": 1.52,
+   "zoom_to": 1.53,
+   "cx": 0.49,
+   "cx_to": 0.49,
+   "cy": 0.341,
+   "cy_to": 0.343,
+   "note": "reaction shot continues over the silence before 'By'"
   },
   {
    "in": 39.45,
    "out": 43.45,
-   "zoom": 1.55,
-   "zoom_to": 1.61,
+   "punch_from": 1.56,
+   "zoom": 1.5,
+   "zoom_to": 1.55,
    "cx_keys": [
     [
      39.45,
@@ -286,16 +313,16 @@
      0.637
     ]
    ],
-   "cy": 0.347,
-   "cy_to": 0.359,
-   "note": "By the time they, some private company tried to",
-   "dissolve": 0.16
+   "cy": 0.337,
+   "cy_to": 0.347,
+   "note": "By the time they, some private company tried to"
   },
   {
    "in": 44.2,
    "out": 59.66,
-   "zoom": 1.5,
-   "zoom_to": 1.62,
+   "punch_from": 1.7,
+   "zoom": 1.62,
+   "zoom_to": 1.56,
    "cx_keys": [
     [
      44.2,
@@ -434,16 +461,16 @@
      0.523
     ]
    ],
-   "cy": 0.337,
-   "cy_to": 0.361,
-   "note": "license it... 40,000 units... too late... iPad took over the market (Richa cutaway 53.0-55.04). I told the government: a million of those tablets, (0.9 s silence trimmed)",
-   "dissolve": 0.2
+   "cy": 0.361,
+   "cy_to": 0.349,
+   "note": "PUNCH IN: license it... 40,000 units... too late... iPad took over the market (Richa 53.0-55.04). I told the government: a million of those tablets, (0.9 s silence trimmed)"
   },
   {
    "in": 63.76,
    "out": 67.648,
-   "zoom": 1.52,
-   "zoom_to": 1.6,
+   "punch_from": 1.56,
+   "zoom": 1.5,
+   "zoom_to": 1.56,
    "cx_keys": [
     [
      63.76,
@@ -482,19 +509,19 @@
      0.432
     ]
    ],
-   "cy": 0.341,
-   "cy_to": 0.358,
-   "note": "and it would have been something that even iPad would have licensed. ('economies of scale / ahead of the curve' cut)",
-   "dissolve": 0.16
+   "cy": 0.337,
+   "cy_to": 0.349,
+   "fade_out": 0.05,
+   "note": "and it would have been something that even iPad would have licensed. ('economies of scale / ahead of the curve' cut)"
   },
   {
    "in": 67.648,
    "out": 68.25,
    "freeze_at": 67.6,
-   "zoom": 1.6,
-   "zoom_to": 1.63,
+   "zoom": 1.56,
+   "zoom_to": 1.58,
    "cx": 0.432,
-   "cy": 0.358,
+   "cy": 0.349,
    "fade_out": 0.05,
    "note": "hold the last frame so 'licensed.' lands, then the end card fades in"
   }

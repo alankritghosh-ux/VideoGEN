@@ -20,6 +20,8 @@ cuts on the same shot gives the jump-cut "punch-in" look. Optional per segment:
                       pan that keeps the face centred); combine with `punch_from` if wanted
   "cx_keys": [[t, cx], ...]   piecewise-linear pan through source-time keyframes instead of cx/cx_to
                       (two keys 1 frame apart make a step: re-centre on the source's own cut). cy_keys likewise
+  "video_in": 53.2    take the picture from here instead of `in` (a cutaway / reaction shot under the segment's
+                      own audio); the crop keys are then in the picture's time
   "dissolve": 0.2     cross-dissolve (s) from the previous segment into this one, with a matching audio
                       crossfade. 0/absent = hard cut (audio still gets 15 ms fades so joins don't click)
 Audio past the end of the source is padded with silence, so a freeze may run beyond the file.
@@ -62,7 +64,7 @@ def motion_expr(s: dict, sw: int, sh: int, src_fps: float) -> str:
             c0, c1 = s.get(axis, 0.5), s.get(f"{axis}_to", s.get(axis, 0.5))
             return f"({c0}+({c1}-{c0})*{u})"
         # Additive piecewise-linear form: v0 + sum slope_i * clip(on - f_i, 0, f_i+1 - f_i).
-        pts = [((t - s["in"]) * src_fps, v) for t, v in keys]
+        pts = [((t - s.get("video_in", s["in"])) * src_fps, v) for t, v in keys]
         expr = f"{pts[0][1]}"
         for (f0, v0), (f1, v1) in zip(pts, pts[1:]):
             if f1 > f0:
@@ -96,9 +98,9 @@ def render_segment(i: int, s: dict, src: str, fps: int, sw: int, sh: int, src_fp
     if "freeze_at" in s:
         vf, vseek = freeze_expr(s, sw, sh, src_fps), s["freeze_at"]
     elif any(k in s for k in ("punch_from", "zoom_to", "cx_to", "cy_to", "cx_keys", "cy_keys")):
-        vf, vseek = motion_expr(s, sw, sh, src_fps), s["in"]
+        vf, vseek = motion_expr(s, sw, sh, src_fps), s.get("video_in", s["in"])
     else:
-        vf, vseek = crop_expr(s.get("zoom", 1.0), s.get("cx", 0.5), s.get("cy", 0.5), sw, sh), s["in"]
+        vf, vseek = crop_expr(s.get("zoom", 1.0), s.get("cx", 0.5), s.get("cy", 0.5), sw, sh), s.get("video_in", s["in"])
     fo = s.get("fade_out", FADE)
     out = tmp / f"seg{i:02d}.mkv"
     graph = (f"[0:v]{vf},setsar=1,fps={fps},settb=AVTB,trim=duration={d:.3f}[v];"
