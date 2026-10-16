@@ -4,99 +4,73 @@
  "segments": [
   {
    "in": 25.85,
-   "out": 28.47,
+   "out": 38.75,
    "zoom": 1.5,
-   "cx": 0.556,
-   "cy": 0.339,
-   "note": "COLD OPEN: this pre-dated the iPad"
+   "zoom_to": 1.6,
+   "cx": 0.566,
+   "cx_to": 0.589,
+   "cy": 0.337,
+   "cy_to": 0.358,
+   "dissolve": 0,
+   "note": "COLD OPEN: this predated the iPad, the Palm Pilot, everything. But we missed the boat. Why? Because they didn't know how to commercialise it."
   },
   {
-   "in": 30.31,
-   "out": 35.11,
-   "zoom": 1.62,
-   "cx": 0.573,
-   "cy": 0.363,
-   "note": "pre-dated everything you can think of. But we missed the boat."
-  },
-  {
-   "in": 35.11,
-   "out": 38.45,
+   "in": 8.0,
+   "out": 17.21,
    "zoom": 1.5,
-   "cx": 0.598,
-   "cy": 0.339,
-   "note": "Why? Because they didn't know how to commercialise it."
+   "zoom_to": 1.58,
+   "cx": 0.385,
+   "cx_to": 0.484,
+   "cy": 0.337,
+   "cy_to": 0.354,
+   "dissolve": 0.2,
+   "note": "Simputer was the first, world's first handheld multilingual GPRS-connected computer. (old name tag gone at 7.98; 'Yes.' at 17.24 cut)"
   },
   {
-   "in": 8.02,
-   "out": 9.35,
-   "zoom": 1.62,
-   "cx": 0.41,
-   "cy": 0.363,
-   "note": "Simputer was the (old name tag gone by 7.98, onset 8.14)"
+   "in": 39.45,
+   "out": 43.45,
+   "zoom": 1.56,
+   "zoom_to": 1.62,
+   "cx": 0.595,
+   "cx_to": 0.645,
+   "cy": 0.349,
+   "cy_to": 0.361,
+   "dissolve": 0.16,
+   "note": "By the time they, some private company tried to"
   },
   {
-   "in": 9.91,
-   "out": 17.11,
+   "in": 44.2,
+   "out": 59.66,
    "zoom": 1.5,
-   "cx": 0.382,
-   "cy": 0.339,
-   "note": "world's first handheld multilingual GPRS-connected computer (stutter 'first' cut)"
+   "zoom_to": 1.62,
+   "cx": 0.64,
+   "cx_to": 0.57,
+   "cy": 0.337,
+   "cy_to": 0.361,
+   "dissolve": 0.2,
+   "note": "license it... 40,000 units... too late... iPad took over the market. I told the government: a million of those tablets, (0.9 s silence trimmed)"
   },
   {
-   "in": 17.59,
-   "out": 25.45,
-   "zoom": 1.62,
-   "cx": 0.56,
-   "cy": 0.363,
-   "note": "How do you teach standardised education to millions? Not possible. But through a tablet you could."
+   "in": 63.76,
+   "out": 67.648,
+   "zoom": 1.52,
+   "zoom_to": 1.6,
+   "cx": 0.463,
+   "cx_to": 0.47,
+   "cy": 0.341,
+   "cy_to": 0.358,
+   "dissolve": 0.16,
+   "note": "and it would have been something that even iPad would have licensed. ('economies of scale / ahead of the curve' cut)"
   },
   {
-   "in": 39.67,
-   "out": 40.39,
-   "zoom": 1.5,
-   "cx": 0.597,
-   "cy": 0.339,
-   "note": "By the time ('they' cut)"
-  },
-  {
-   "in": 40.79,
-   "out": 43.1,
-   "zoom": 1.62,
-   "cx": 0.613,
-   "cy": 0.363,
-   "note": "some private company tried to"
-  },
-  {
-   "in": 44.49,
-   "out": 48.09,
-   "zoom": 1.5,
-   "cx": 0.517,
-   "cy": 0.339,
-   "note": "license it, 40,000 units, it was too late ('because Palm Pilots had come in' cut)"
-  },
-  {
-   "in": 51.29,
-   "out": 55.05,
-   "zoom": 1.62,
-   "cx": 0.498,
-   "cy": 0.363,
-   "note": "iPad had come in, they just took over the market (Richa cutaway 53.0-55.04)"
-  },
-  {
-   "in": 55.37,
-   "out": 59.69,
-   "zoom": 1.5,
-   "cx": 0.506,
-   "cy": 0.339,
-   "note": "I told the government: if you had procured a million of those tablets"
-  },
-  {
-   "in": 63.77,
-   "out": 67.6,
-   "zoom": 1.62,
-   "cx": 0.471,
-   "cy": 0.363,
-   "note": "it would have been something that even iPad would have licensed"
+   "in": 67.648,
+   "out": 68.15,
+   "freeze_at": 67.6,
+   "zoom": 1.6,
+   "zoom_to": 1.63,
+   "cx": 0.47,
+   "cy": 0.358,
+   "note": "hold last frame so 'licensed.' lands before the end card (audio padded with silence)"
   }
  ]
 }
