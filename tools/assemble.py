@@ -18,6 +18,8 @@ cuts on the same shot gives the jump-cut "punch-in" look. Optional per segment:
                       pushing in from `zoom` to `zoom_to`: a beat to let a line land
   "zoom_to", "cx_to", "cy_to"   drift linearly from zoom/cx/cy to these over the segment (slow push-in,
                       pan that keeps the face centred); combine with `punch_from` if wanted
+  "cx_keys": [[t, cx], ...]   piecewise-linear pan through source-time keyframes instead of cx/cx_to
+                      (two keys 1 frame apart make a step: re-centre on the source's own cut). cy_keys likewise
   "dissolve": 0.2     cross-dissolve (s) from the previous segment into this one, with a matching audio
                       crossfade. 0/absent = hard cut (audio still gets 15 ms fades so joins don't click)
 Audio past the end of the source is padded with silence, so a freeze may run beyond the file.
@@ -54,10 +56,20 @@ def motion_expr(s: dict, sw: int, sh: int, src_fps: float) -> str:
     if "punch_from" in s:
         n = max(1, round(0.25 * src_fps))
         zexpr = f"({zexpr}+({s['punch_from']}-{z0})*pow(max(0\\,1-on/{n})\\,2))"
-    cx0, cx1 = s.get("cx", 0.5), s.get("cx_to", s.get("cx", 0.5))
-    cy0, cy1 = s.get("cy", 0.5), s.get("cy_to", s.get("cy", 0.5))
-    x = f"clip(iw*({cx0}+({cx1}-{cx0})*{u})-iw/zoom/2\\,0\\,iw-iw/zoom)"
-    y = f"clip(ih*({cy0}+({cy1}-{cy0})*{u})-ih/zoom/2\\,0\\,ih-ih/zoom)"
+    def track(axis: str) -> str:
+        keys = s.get(f"{axis}_keys")
+        if not keys:
+            c0, c1 = s.get(axis, 0.5), s.get(f"{axis}_to", s.get(axis, 0.5))
+            return f"({c0}+({c1}-{c0})*{u})"
+        # Additive piecewise-linear form: v0 + sum slope_i * clip(on - f_i, 0, f_i+1 - f_i).
+        pts = [((t - s["in"]) * src_fps, v) for t, v in keys]
+        expr = f"{pts[0][1]}"
+        for (f0, v0), (f1, v1) in zip(pts, pts[1:]):
+            if f1 > f0:
+                expr += f"+({(v1 - v0) / (f1 - f0):.6f})*clip(on-{f0:.2f}\\,0\\,{f1 - f0:.2f})"
+        return f"({expr})"
+    x = f"clip(iw*{track('cx')}-iw/zoom/2\\,0\\,iw-iw/zoom)"
+    y = f"clip(ih*{track('cy')}-ih/zoom/2\\,0\\,ih-ih/zoom)"
     pre = f"scale={round(sw * base / 2) * 2}:{round(sh * base / 2) * 2}," if base != 1 else ""
     # zoompan reports a bogus EOF timestamp; re-stamp frames and close the stream with trim.
     return (f"{pre}zoompan=z='{zexpr}':x='{x}':y='{y}':d=1:s={W}x{H}:fps={src_fps},"
@@ -83,7 +95,7 @@ def render_segment(i: int, s: dict, src: str, fps: int, sw: int, sh: int, src_fp
     d = s["out"] - s["in"]
     if "freeze_at" in s:
         vf, vseek = freeze_expr(s, sw, sh, src_fps), s["freeze_at"]
-    elif any(k in s for k in ("punch_from", "zoom_to", "cx_to", "cy_to")):
+    elif any(k in s for k in ("punch_from", "zoom_to", "cx_to", "cy_to", "cx_keys", "cy_keys")):
         vf, vseek = motion_expr(s, sw, sh, src_fps), s["in"]
     else:
         vf, vseek = crop_expr(s.get("zoom", 1.0), s.get("cx", 0.5), s.get("cy", 0.5), sw, sh), s["in"]
@@ -135,15 +147,18 @@ def main():
         with ThreadPoolExecutor(max_workers=args.jobs) as pool:
             files = list(pool.map(lambda a: render_segment(*a), [(i, s, src, fps, sw, sh, src_fps, tmp) for i, s in enumerate(segs)]))
         # Chain the intermediates: xfade/acrossfade where a dissolve is asked for, concat otherwise.
-        parts, vcur, acur, acc = [], "[0:v]", "[0:a]", segs[0]["out"] - segs[0]["in"]
+        # xfade insists on identical timebases, and the mkv intermediates / concat outputs differ: normalise.
+        tb = f"settb=AVTB,fps={fps}"
+        parts = [f"[{i}:v]{tb}[n{i}]" for i in range(len(segs))]
+        vcur, acur, acc = "[n0]", "[0:a]", segs[0]["out"] - segs[0]["in"]
         for i, s in enumerate(segs[1:], start=1):
             d, dis = s["out"] - s["in"], s.get("dissolve", 0)
             if dis > 0:
-                parts.append(f"{vcur}[{i}:v]xfade=transition=fade:duration={dis}:offset={acc - dis:.3f}[vx{i}]")
+                parts.append(f"{vcur}[n{i}]xfade=transition=fade:duration={dis}:offset={acc - dis:.3f}[vx{i}]")
                 parts.append(f"{acur}[{i}:a]acrossfade=d={dis}:c1=tri:c2=tri[ax{i}]")
                 acc += d - dis
             else:
-                parts.append(f"{vcur}[{i}:v]concat=n=2:v=1:a=0[vx{i}]")
+                parts.append(f"{vcur}[n{i}]concat=n=2:v=1:a=0,{tb}[vx{i}]")
                 parts.append(f"{acur}[{i}:a]concat=n=2:v=0:a=1[ax{i}]")
                 acc += d
             vcur, acur = f"[vx{i}]", f"[ax{i}]"

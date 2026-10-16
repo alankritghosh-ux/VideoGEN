@@ -4,73 +4,499 @@
  "segments": [
   {
    "in": 25.85,
-   "out": 38.75,
+   "out": 38.16,
    "zoom": 1.5,
-   "zoom_to": 1.6,
-   "cx": 0.566,
-   "cx_to": 0.589,
+   "zoom_to": 1.59,
+   "cx_keys": [
+    [
+     25.85,
+     0.56
+    ],
+    [
+     26.0,
+     0.56
+    ],
+    [
+     26.5,
+     0.562
+    ],
+    [
+     27.0,
+     0.565
+    ],
+    [
+     27.5,
+     0.565
+    ],
+    [
+     28.0,
+     0.55
+    ],
+    [
+     28.5,
+     0.532
+    ],
+    [
+     29.0,
+     0.523
+    ],
+    [
+     29.5,
+     0.523
+    ],
+    [
+     29.92,
+     0.527
+    ],
+    [
+     30.0,
+     0.583
+    ],
+    [
+     30.5,
+     0.602
+    ],
+    [
+     31.0,
+     0.617
+    ],
+    [
+     31.5,
+     0.641
+    ],
+    [
+     32.0,
+     0.636
+    ],
+    [
+     32.5,
+     0.624
+    ],
+    [
+     33.0,
+     0.596
+    ],
+    [
+     33.5,
+     0.531
+    ],
+    [
+     34.0,
+     0.468
+    ],
+    [
+     34.5,
+     0.484
+    ],
+    [
+     35.0,
+     0.539
+    ],
+    [
+     35.5,
+     0.6
+    ],
+    [
+     35.72,
+     0.6
+    ],
+    [
+     36.0,
+     0.599
+    ],
+    [
+     36.5,
+     0.6
+    ],
+    [
+     37.0,
+     0.606
+    ],
+    [
+     37.5,
+     0.601
+    ],
+    [
+     38.0,
+     0.6
+    ],
+    [
+     38.16,
+     0.6
+    ]
+   ],
    "cy": 0.337,
-   "cy_to": 0.358,
-   "dissolve": 0,
-   "note": "COLD OPEN: this predated the iPad, the Palm Pilot, everything. But we missed the boat. Why? Because they didn't know how to commercialise it."
+   "cy_to": 0.356,
+   "note": "COLD OPEN: this predated the iPad, the Palm Pilot, everything. But we missed the boat. Why? Because they didn't know how to commercialise"
+  },
+  {
+   "in": 38.16,
+   "out": 38.6,
+   "freeze_at": 38.12,
+   "zoom": 1.59,
+   "zoom_to": 1.61,
+   "cx": 0.6,
+   "cy": 0.356,
+   "fade_out": 0.05,
+   "note": "'it.' lands on a held frame: the source punches in at 38.16, on the last word; the hold replaces that cut"
   },
   {
    "in": 8.08,
-   "out": 17.21,
+   "out": 16.84,
    "zoom": 1.5,
-   "zoom_to": 1.58,
-   "cx": 0.385,
-   "cx_to": 0.484,
+   "zoom_to": 1.57,
+   "cx_keys": [
+    [
+     8.08,
+     0.402
+    ],
+    [
+     8.5,
+     0.415
+    ],
+    [
+     9.0,
+     0.416
+    ],
+    [
+     9.5,
+     0.431
+    ],
+    [
+     10.0,
+     0.437
+    ],
+    [
+     10.5,
+     0.444
+    ],
+    [
+     11.0,
+     0.444
+    ],
+    [
+     11.5,
+     0.437
+    ],
+    [
+     12.0,
+     0.429
+    ],
+    [
+     12.5,
+     0.393
+    ],
+    [
+     13.0,
+     0.36
+    ],
+    [
+     13.5,
+     0.333
+    ],
+    [
+     14.0,
+     0.333
+    ],
+    [
+     14.5,
+     0.333
+    ],
+    [
+     15.0,
+     0.333
+    ],
+    [
+     15.5,
+     0.333
+    ],
+    [
+     16.0,
+     0.334
+    ],
+    [
+     16.5,
+     0.338
+    ],
+    [
+     16.84,
+     0.356
+    ]
+   ],
    "cy": 0.337,
-   "cy_to": 0.354,
-   "dissolve": 0.2,
-   "note": "Simputer was the first, world's first handheld multilingual GPRS-connected computer. (old name tag gone at 7.98, two-frame seek margin; 'Yes.' at 17.24 cut)"
+   "cy_to": 0.352,
+   "note": "Simputer was the first, world's first handheld multilingual GPRS-connected compu- (old tag gone at 7.98 + 2-frame seek margin)",
+   "dissolve": 0.2
+  },
+  {
+   "in": 16.84,
+   "out": 17.21,
+   "freeze_at": 16.8,
+   "zoom": 1.57,
+   "zoom_to": 1.59,
+   "cx": 0.356,
+   "cy": 0.352,
+   "fade_out": 0.05,
+   "note": "-ter. on a held frame (source punch-in at 16.84); 'Yes.' at 17.24 cut"
   },
   {
    "in": 39.45,
    "out": 43.45,
-   "zoom": 1.56,
-   "zoom_to": 1.62,
-   "cx": 0.595,
-   "cx_to": 0.645,
-   "cy": 0.349,
-   "cy_to": 0.361,
-   "dissolve": 0.16,
-   "note": "By the time they, some private company tried to"
+   "zoom": 1.55,
+   "zoom_to": 1.61,
+   "cx_keys": [
+    [
+     39.45,
+     0.597
+    ],
+    [
+     39.5,
+     0.597
+    ],
+    [
+     40.0,
+     0.597
+    ],
+    [
+     40.5,
+     0.597
+    ],
+    [
+     41.0,
+     0.594
+    ],
+    [
+     41.5,
+     0.598
+    ],
+    [
+     42.0,
+     0.609
+    ],
+    [
+     42.5,
+     0.626
+    ],
+    [
+     43.0,
+     0.634
+    ],
+    [
+     43.45,
+     0.637
+    ]
+   ],
+   "cy": 0.347,
+   "cy_to": 0.359,
+   "note": "By the time they, some private company tried to",
+   "dissolve": 0.16
   },
   {
    "in": 44.2,
    "out": 59.66,
    "zoom": 1.5,
    "zoom_to": 1.62,
-   "cx": 0.64,
-   "cx_to": 0.57,
+   "cx_keys": [
+    [
+     44.2,
+     0.599
+    ],
+    [
+     44.5,
+     0.599
+    ],
+    [
+     45.0,
+     0.58
+    ],
+    [
+     45.5,
+     0.531
+    ],
+    [
+     46.0,
+     0.496
+    ],
+    [
+     46.5,
+     0.467
+    ],
+    [
+     47.0,
+     0.454
+    ],
+    [
+     47.5,
+     0.484
+    ],
+    [
+     48.0,
+     0.526
+    ],
+    [
+     48.5,
+     0.575
+    ],
+    [
+     49.0,
+     0.596
+    ],
+    [
+     49.5,
+     0.604
+    ],
+    [
+     50.0,
+     0.603
+    ],
+    [
+     50.5,
+     0.584
+    ],
+    [
+     51.0,
+     0.563
+    ],
+    [
+     51.5,
+     0.538
+    ],
+    [
+     52.0,
+     0.527
+    ],
+    [
+     52.5,
+     0.51
+    ],
+    [
+     53.0,
+     0.504
+    ],
+    [
+     53.5,
+     0.488
+    ],
+    [
+     54.0,
+     0.485
+    ],
+    [
+     54.5,
+     0.473
+    ],
+    [
+     55.0,
+     0.472
+    ],
+    [
+     55.04,
+     0.472
+    ],
+    [
+     55.5,
+     0.523
+    ],
+    [
+     56.0,
+     0.511
+    ],
+    [
+     56.5,
+     0.488
+    ],
+    [
+     57.0,
+     0.489
+    ],
+    [
+     57.5,
+     0.493
+    ],
+    [
+     58.0,
+     0.499
+    ],
+    [
+     58.5,
+     0.499
+    ],
+    [
+     59.0,
+     0.515
+    ],
+    [
+     59.5,
+     0.523
+    ],
+    [
+     59.66,
+     0.523
+    ]
+   ],
    "cy": 0.337,
    "cy_to": 0.361,
-   "dissolve": 0.2,
-   "note": "license it... 40,000 units... too late... iPad took over the market. I told the government: a million of those tablets, (0.9 s silence trimmed)"
+   "note": "license it... 40,000 units... too late... iPad took over the market (Richa cutaway 53.0-55.04). I told the government: a million of those tablets, (0.9 s silence trimmed)",
+   "dissolve": 0.2
   },
   {
    "in": 63.76,
    "out": 67.648,
    "zoom": 1.52,
    "zoom_to": 1.6,
-   "cx": 0.463,
-   "cx_to": 0.47,
+   "cx_keys": [
+    [
+     63.76,
+     0.465
+    ],
+    [
+     64.0,
+     0.465
+    ],
+    [
+     64.5,
+     0.468
+    ],
+    [
+     65.0,
+     0.474
+    ],
+    [
+     65.5,
+     0.478
+    ],
+    [
+     66.0,
+     0.487
+    ],
+    [
+     66.5,
+     0.47
+    ],
+    [
+     67.0,
+     0.465
+    ],
+    [
+     67.648,
+     0.432
+    ]
+   ],
    "cy": 0.341,
    "cy_to": 0.358,
-   "dissolve": 0.16,
-   "note": "and it would have been something that even iPad would have licensed. ('economies of scale / ahead of the curve' cut)"
+   "note": "and it would have been something that even iPad would have licensed. ('economies of scale / ahead of the curve' cut)",
+   "dissolve": 0.16
   },
   {
    "in": 67.648,
-   "out": 68.15,
+   "out": 68.25,
    "freeze_at": 67.6,
    "zoom": 1.6,
    "zoom_to": 1.63,
-   "cx": 0.47,
+   "cx": 0.432,
    "cy": 0.358,
-   "note": "hold last frame so 'licensed.' lands before the end card (audio padded with silence)"
+   "fade_out": 0.05,
+   "note": "hold the last frame so 'licensed.' lands, then the end card fades in"
   }
  ]
 }

@@ -40,6 +40,8 @@ export type ReelProps = {
 };
 
 export const END_CARD_SEC = 2.5;
+// The end card fades in over the clip's last frames instead of cutting.
+const END_CARD_FADE_FRAMES = 10;
 
 export const reelDefaults: ReelProps = {clip: '', durationSec: 10, captions: [], endCard: true};
 
@@ -189,8 +191,10 @@ const QuoteCardView: React.FC<QuoteCard> = ({kicker, quote, sub}) => {
 };
 
 const EndCard: React.FC = () => {
-  const frame = useCurrentFrame();
+  const raw = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const fade = interpolate(raw, [0, END_CARD_FADE_FRAMES], [0, 1], {extrapolateRight: 'clamp'});
+  const frame = Math.max(0, raw - END_CARD_FADE_FRAMES);
   const s = spring({frame, fps, config: {damping: 200}, durationInFrames: 15});
   const tag = interpolate(frame, [12, 24], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const [first, ...rest] = BRAND.tagline.split(' ');
@@ -200,6 +204,7 @@ const EndCard: React.FC = () => {
         background: `radial-gradient(120% 80% at 50% 40%, ${BRAND.endCardTo}, ${BRAND.endCardFrom})`,
         justifyContent: 'center',
         alignItems: 'center',
+        opacity: fade,
       }}
     >
       <Img src={staticFile('brand/campus-fund-logo-white.png')} style={{width: 720, opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.92, 1])})`}} />
@@ -252,7 +257,7 @@ export const Reel: React.FC<ReelProps> = ({clip, durationSec, captions, hook, sp
         ))}
       </Sequence>
       {endCard ? (
-        <Sequence from={clipFrames} durationInFrames={Math.round(END_CARD_SEC * fps)} layout="none">
+        <Sequence from={clipFrames - END_CARD_FADE_FRAMES} durationInFrames={Math.round(END_CARD_SEC * fps) + END_CARD_FADE_FRAMES} layout="none">
           <EndCard />
         </Sequence>
       ) : null}
