@@ -12,9 +12,9 @@ MP=https://storage.googleapis.com/mediapipe-models/face_detector
 log() { echo "[setup] $*" >&2; }
 
 # System libs: libass is in Ubuntu's ffmpeg; mediapipe needs EGL.
-if ! ldconfig -p | grep -q libEGL.so.1 && command -v apt-get >/dev/null; then
-  log "installing libegl1"
-  (apt-get install -y -q libegl1 >/dev/null 2>&1 || { apt-get update -q >/dev/null && apt-get install -y -q libegl1 >/dev/null; }) || log "WARN: libegl1 install failed (mediapipe reframing unavailable)"
+if ! { ldconfig -p | grep -q libEGL.so.1 && ldconfig -p | grep -q libGLESv2.so.2; } && command -v apt-get >/dev/null; then
+  log "installing libegl1 libgles2"
+  (apt-get install -y -q libegl1 libgles2 >/dev/null 2>&1 || { apt-get update -q >/dev/null && apt-get install -y -q libegl1 libgles2 >/dev/null; }) || log "WARN: libegl1/libgles2 install failed (mediapipe reframing unavailable)"
 fi
 
 if [ ! -x .venv/bin/python ]; then
