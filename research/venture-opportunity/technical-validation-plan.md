@@ -237,6 +237,7 @@ Priority: F1-A0 (one email), F2-A (kills or confirms the lead), F1-A, F3-A — a
 - **Procedure and baseline**: regime identification → accounting → charge engine → discrepancy list → blind review by a tariff expert → agreed recoverable ₹; baseline = billed amounts (and the customer's own reconciliation if any).
 - **Sample/period**: 12 months per site covers a full tariff year and the FY26→FY27 surcharge switch (₹0.82 → ₹0.40 [IC]); 5 sites so the median is not one outlier; 24 months where available to catch retroactive true-ups.
 - **Metrics**: recoverable ₹/yr, % of bill, expert-rejected flag rate, time to settlement.
+- **Recovery-channel condition** (adopted from the red-team dissent): only amounts recoverable through an administrative channel inside the founder's runway (ESCOM bill correction, generator credit note, or an existing commission order covering the error class) count toward the pass threshold; litigation-only amounts are reported separately and carry no success fee. If the administrative-channel share alone misses the 1.5% / ₹5 lakh threshold, F2-A fails even when the gross figure passes.
 - **Time/cost**: ≤14 days after data receipt; ≈₹0 compute; expert review ≈₹25–50k if paid [EST].
 - **Establishes**: money exists and the engine finds it. **Does not**: willingness to pay, recoverability from the DISCOM in practice, population error frequency.
 - **Next**: pass → 90-day build and success-fee pilots; fail → re-scope to procurement optimisation or stop; inconclusive → five more sites via an association.

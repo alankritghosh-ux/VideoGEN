@@ -56,7 +56,7 @@ Cash for the week ≈₹6,000 (domain, cloud, printing, local travel); everythin
 | 1 | Write the F2 interview script (below), adapted from section F of f1_customers_and_buying.md: behaviour, cost, authority, urgency; no pitching before Q13. | 2 h | `interviews/script_f2.md` | ₹0 |
 | 2 | Draft a one-page outreach note: the offer (free recomputation of 12 months of OA bills under KERC rules; nothing owed unless money is found), what is needed (bills, energy-accounting and banking statements, W&B agreement, PPA charge schedule), confidentiality (NDA on request; deletion on request). No claims about team, customers or track record. | 1.5 h | `outreach/one_pager.md` | ₹0 |
 | 3 | Tier the ~900 rows: Tier A = multi-installation consumers within 40 km of Bengaluru (the notes name Shahi Exports ≥6 installations, Wipro entities, Infosys/Infosys Green Forum 40 MW, Bagmane, RMZ, Manyata, Biocon, Narayana Hrudayalaya, Sansera, Toyota Tsusho, Himatsingka); Tier B = GESCOM/HESCOM steel-cement-textile belt (Kirloskar Ferrous, Kalyani Steels, Mukand, Orient Cement); Tier C = rest. Fit reasons: f2_f3_commercial_facts.md Table F2. | 2 h | 40 Tier-A names | ₹0 |
-| 4 | List public routes (routes, not contacts): KASSIA, Peenya Industries Association and the FKCCI energy committee (named in decision_brief.md §7); the largest generators in the BESCOM/CESC lists (Clean Max, Atria, Greenergy, Radiance, AMP Solar) as a second route to their consumers' energy managers. Take fees and event dates from public pages only. | 1.5 h | `outreach/routes.md` | ₹0 |
+| 4 | List public routes (routes, not contacts): KASSIA, Peenya Industries Association and the FKCCI energy committee (named in decision_brief.md §9 (binding) and §7); the largest generators in the BESCOM/CESC lists (Clean Max, Atria, Greenergy, Radiance, AMP Solar) as a second route to their consumers' energy managers. Take fees and event dates from public pages only. | 1.5 h | `outreach/routes.md` | ₹0 |
 
 **F2 interview script (30 minutes; record who answered):**
 
@@ -97,7 +97,7 @@ Cash for the week ≈₹6,000 (domain, cloud, printing, local travel); everythin
 
 | # | Action | Time | Output | Cost |
 |---|---|---|---|---|
-| 1 | F1-A: base rate, logistic regression (region, substation, technology, MW, in-principle-to-firm gap, cluster flag) and a tree model, time-ordered cross-validation; report AUC for effective-within-12-months and MAE in months. Pass = AUC ≥0.70 over base rate. | 5 h | `f1/results.md` | ₹0 |
+| 1 | F1-A: base rate, logistic regression (region, substation, technology, MW, in-principle-to-firm gap, cluster flag) and a tree model, time-ordered cross-validation; report AUC and Brier for effective-within-12-months and MAE in months. Pass = AUC ≥0.70 and Brier better than CTUIL's own expected date; fail <0.60; 0.60–0.70 inconclusive. | 5 h | `f1/results.md` | ₹0 |
 | 2 | Draft a mutual NDA and data-handling terms (what is collected, where stored, who sees it, deletion on request, no onward sharing, no cross-customer use); lawyer review in Week 2. | 2 h | `legal/*_draft.md` | ₹0 |
 | 3 | Fill the Week-1 metrics file (section 6). | 0.5 h | `metrics/week01.md` | ₹0 |
 
@@ -123,10 +123,10 @@ Cash for the week ≈₹6,000 (domain, cloud, printing, local travel); everythin
 
 | Test | Pass | Fail | Inconclusive | Action |
 |---|---|---|---|---|
-| **F2-A** (5 sites × 12 months) | Median recoverable ≥1.5% of annual OA bill AND ≥₹5 lakh/yr at ≥3 of 5 | <0.5% at 4 of 5 | <3 sites obtained, or 0.5–1.5% | Pass: offer paid pilots to the 3 best sites. Fail: the recurring value is bookkeeping — re-scope to procurement optimisation (DERS vs OA, group-captive vs third-party) and re-test in 30 days, or stop. Inconclusive: extend 14 days with travel-only spend; <3 sites by Day 44 = fail on access. |
+| **F2-A** (5 sites × 12 months) | Median recoverable ≥1.5% of annual OA bill AND ≥₹5 lakh/yr at ≥3 of 5, counting only amounts recoverable through an administrative channel (ESCOM correction, generator credit note, existing commission order); litigation-only amounts reported separately and excluded | <0.5% at 4 of 5 (same counting rule) | <3 sites obtained, or 0.5–1.5% | Pass: offer paid pilots to the 3 best sites. Fail: the recurring value is bookkeeping — re-scope to procurement optimisation (DERS vs OA, group-captive vs third-party) and re-test in 30 days, or stop. Inconclusive: extend 14 days with travel-only spend; <3 sites by Day 44 = fail on access. |
 | **F2-B** (10 interviews) | ≥4/10 pay someone or report a dispute/lapse loss in 24 months AND ≥3 accept a success-fee audit | <2 and none accept | <10 interviews, or 2–3 pay but none accept | Fail: stop F2. Inconclusive: 10 more interviews via associations in Days 31–44; same pattern = stop. |
 | **F1-A0** (CTUIL permission) | Written permission, even conditional (attribution, derived outputs only) | Refusal, or silence after two follow-ups | Reply asks for a formal application | Pass with F1-A pass: keep F1 as a later module; no build before Day 90. Fail: F1 dead as a product; parser stays internal. Inconclusive: file; do not build. |
-| **F1-A** (skill) | AUC ≥0.70 over base rate | AUC <0.70 | Too few labelled rows | Fail: F1 is aggregation only, which CTUIL already publishes — kill. |
+| **F1-A** (skill) | AUC ≥0.70 AND Brier score better than CTUIL's own expected-date baseline | AUC <0.60, or no gain over CTUIL's own date | AUC 0.60–0.70, or <150 usable test rows | Fail: F1 is aggregation only, which CTUIL already publishes — kill. Inconclusive: file; no build. (Thresholds as in technical-validation-plan.md §6.2.) |
 
 **Stop conditions:** both F2 tests fail; or F2-B fails regardless of F2-A (money found, nobody will pay to find it); or <2 sites' statements after 110+ messages and three association requests (unreachable without a channel partner — a different plan).
 
@@ -149,6 +149,7 @@ Cash for the week ≈₹6,000 (domain, cloud, printing, local travel); everythin
 | Rule coverage | 2–3 states (Karnataka complete; TN or Maharashtra usable on real bills) | Karnataka only | Needed to call it an engine rather than a Karnataka consultancy. |
 | Repeatability | ≥1 site using the monthly settlement run, i.e. the ₹2–5 lakh/site/yr subscription case (f2_f3_commercial_facts.md F2-Q3) | None | Fail: it is an audit practice; decide if that is acceptable. |
 | Raise vs bootstrap | Raise only with 5+ paying sites, a channel producing statements without cold outreach, and a credible 12-month path to ₹1 Cr ARR; otherwise stay bootstrapped on success fees | — | Nira Energy was profitable in year one on subscriptions ( https://www.latitudemedia.com/news/how-nira-energy-is-using-software-to-unclog-the-interconnection-queue ) — records-based products can bootstrap. |
+| Accumulating advantage (forward measure) | ≥24 audited site-months in the settlement corpus, ≥2 error classes found at ≥2 sites each (i.e. the rule library is catching repeatable errors, not one-offs), and the second site in a state recomputed in under half the hours of the first | <12 site-months, or no repeated error class, or no learning-curve effect | Fail: the asset is not compounding; treat the business as an audit practice and price accordingly. |
 | F1 / F3 | F1 (if kept): one-page alerting-module spec, built only after F2 revenue. F3: re-read only when CERC notifies market coupling, storage charging rules finalise, or an IEX licence price is known | — | No F1 build and no F3 work before Day 90 under any outcome. |
 
 ## 5. Budget (₹)
