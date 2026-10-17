@@ -134,7 +134,7 @@ A success fee of 20–25% of verified recoveries (the audit-firm structure, cons
 - Buyers pay for OA data: JMK ₹2 lakh report — VF; advisory "payback under 6 months" — EST (developer blog).
 
 ### 5.7 What can be built without privileged access
-The entire first experiment: the Karnataka rule library from public KERC orders and regulations; the target list from public SLDC lists; the bill parser and 15-minute accounting engine with conservation tests on a synthetic site; and the recomputation itself on files the customer exports. No ESCOM, SLDC, exchange or weather feed is needed. The one thing public data cannot show is whether Karnataka ESCOMs/SLDC issue 15-minute accounting and banking statements to consumers as exports — the first design-partner conversation must settle it (`technical-validation-plan.md` §3.9).
+Everything in the first experiment: the Karnataka rule library from public KERC orders; the target list from public SLDC lists; the bill parser and 15-minute accounting engine tested on a synthetic site; the recomputation itself on customer exports. No ESCOM, SLDC, exchange or weather feed is needed. What public data cannot show is whether Karnataka ESCOMs/SLDC issue 15-minute accounting and banking statements as exports — the first design-partner conversation must settle it.
 
 ### 5.8 Technical architecture and key unknowns
 A document-to-ledger engine, not an "AI product": Fetcher (hashed artefacts) → Extractor (deterministic PDF/XLSX parsing; LLM fallback only on rejected pages, flagged for human check) → Normaliser (entities, units, 96-block dates; no LLM at runtime) → Rule library (one effective-dated module per regulation version) → append-only Ledger (entity, attribute, value, valid_from/to, artefact, verifier) → Explain layer. LLMs draft rule code and explanations; they are never the source of a number that reaches a bill. Pipeline: bill → line items; 15-minute injection and drawal → block table; **regime identification** (legacy WBA vs 2025 vs GEOA; captive vs third-party; voltage; term) before any arithmetic; banking state machine; charge engine; discrepancy list. The procurement optimiser is a small MILP on an open-source solver. Tests: golden files per document type, rule tests to ≤₹1 per line, energy-conservation property tests. CPU-only; <₹3,000/month for several pilots (EST). Key unknowns: statement availability as exports; FY26–28 wheeling and SLDC ₹/kWh charges in unparsed tariff-order annexures (UNK); population error frequency (UNK); which claims an ESCOM will entertain (expert).
@@ -161,12 +161,12 @@ Base EBITDA at 100 customers ₹6.1 Cr. Path to first revenue on a ₹10 lakh bu
 
 ### 5.13 Strongest reasons it could fail
 1. Incumbents bundle settlement at no visible fee once a consumer asks (TPTCL, CES, OAE, BridgeIT) — medium likelihood, high impact.
-2. Statements are not obtainable as exports: the likeliest failure of the gate; high likelihood, fatal for F2-A if unmitigated.
-3. Over-billing is episodic and corrected in bulk by regulators, so the per-consumer pool is below 0.5% of bill — medium.
-4. Rule changes mid-pilot (KERC FY27 surcharge pending; legacy banking before the Supreme Court; MERC capacity-based banking) — high likelihood, medium impact; also the recurring demand.
+2. Statements not obtainable as exports — the likeliest gate failure; high likelihood, fatal if unmitigated.
+3. Over-billing episodic and corrected in bulk by regulators; per-consumer pool below 0.5% of bill — medium.
+4. Rule changes mid-pilot (KERC FY27 surcharge; legacy banking before the Supreme Court; MERC capacity-based banking) — high likelihood, medium impact; also the recurring demand.
 5. An engine error produces a false claim and burns the first customer — medium/high; no claim leaves without expert sign-off.
 6. Founder bandwidth and credibility at listed-company vendor onboarding (4–8 weeks, HYP).
-7. The business stays a Karnataka audit practice and never becomes an engine or a settlement agent.
+7. It stays a Karnataka audit practice and never becomes an engine or a settlement agent.
 
 ### 5.14 Cheapest experiment that could invalidate the thesis
 **F2-A** (≤14 days after data receipt; ≈₹0 compute; ≈₹25–50k expert review if paid): obtain 12 months of bills, generator invoices, SLDC/ESCOM accounting and banking statements and 15-minute meter data from 3–5 Karnataka consumers; identify the regime; recompute; blind expert review; agreed recoverable ₹, split "overcharge recoverable from ESCOM/generator" vs "avoidable lapse/standby/DERS loss". **Pass:** median ≥1.5% of annual OA bill **and** ≥₹5 lakh/yr at ≥3 of 5 sites. **Fail:** <0.5% at ≥4 of 5 — the recurring value is bookkeeping; re-scope to procurement optimisation or stop. **Inconclusive:** <3 complete sites, or discrepancies the expert cannot adjudicate — extend 14 days on travel-only spend; <3 sites by day 44 = fail on access. It shows money exists and the engine finds it; it does not show willingness to pay (F2-B) or recoverability in practice.
@@ -188,11 +188,11 @@ Base EBITDA at 100 customers ₹6.1 Cr. Path to first revenue on a ₹10 lakh bu
 **Day 90 (16 Jan 2027).** ≥₹3 lakh invoiced or ≥₹10 lakh verified recoverable under signed letters = pass; <₹1 lakh invoiced and <₹5 lakh verified = stop or re-scope. Rules usable in 2–3 states; ≥1 site on the monthly settlement run — none means it is an audit practice, decide if acceptable. Raise only with 5+ paying sites, a channel producing statements without cold outreach, and a credible path to ₹1 Cr ARR; otherwise stay bootstrapped. No F1 build and no F3 work before day 90 under any outcome. Budget to day 90 ≈₹4.7–4.85 lakh of the assumed ₹10 lakh.
 
 ### 5.17 The five most important unanswered questions
-1. Do Karnataka ESCOMs / SLDC issue 15-minute energy-accounting and banking statements to consumers as exports, and in what format? (Gates F2-A; UNK.)
-2. What is the recoverable pool — overcharge versus avoidable loss — as a share of the annual OA bill across a population of sites, not litigated cases? (F2-A; UNK.)
-3. Will consumers accept a success-fee audit and then a ₹2–5 lakh/site/yr subscription, when no Indian OA audit or advisory fee is published and "zero upfront" advisory is the norm? (F2-B; UNK.)
-4. What do the incumbent bundles actually cover for a consumer — does Tata Power Trading sell settlement without trading, does BridgeIT handle OA banking logic, what does Open Access Exchange do after signing? (Interview Q3; UNK.)
-5. Which claims will an ESCOM entertain in practice, and how will the pending items — KERC's FY27 surcharge determination, the Supreme Court matter on legacy banking, MERC's capacity-based banking — change the rule library mid-pilot? (Expert review; UNK.)
+1. Do Karnataka ESCOMs / SLDC issue 15-minute accounting and banking statements to consumers as exports, in what format? (Gates F2-A; UNK.)
+2. What is the recoverable pool — overcharge versus avoidable loss — as a share of the OA bill across a population of sites, not litigated cases? (F2-A; UNK.)
+3. Will consumers accept a success-fee audit and then ₹2–5 lakh/site/yr, when no Indian OA audit fee is published and "zero upfront" advisory is the norm? (F2-B; UNK.)
+4. What do the incumbent bundles cover — does Tata Power Trading sell settlement without trading, does BridgeIT handle OA banking logic, what does Open Access Exchange do after signing? (Interview Q3; UNK.)
+5. Which claims will an ESCOM entertain in practice, and how will KERC's FY27 surcharge determination, the Supreme Court matter on legacy banking and MERC's capacity-based banking change the rule library mid-pilot? (Expert review; UNK.)
 
 ## 6. Decision
 
