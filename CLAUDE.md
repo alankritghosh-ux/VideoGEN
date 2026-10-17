@@ -21,9 +21,16 @@ Cloud-sandbox network rules that shape tool choices:
   (works with clipify's `build_ass.py`), `@remotion/captions` JSON and SRT.
 - `docs/STYLE.md` — **Campus Fund house style** (read before editing any reel): formats, hook/caption/stamp/quote-card/end-card
   spec, titles and descriptions. Target is YouTube Shorts (same master is used for Instagram Reels, @campus.fund).
+  Format D (founder lore: archive clip of an A-list founder, letterboxed, serif captions, bridge line) is at the end.
+- `docs/SOURCING.md` — where raw founder clips can be fetched from inside the sandbox (NASA, archive.org, Commons, Drive via
+  `gdown`) and what is blocked (YouTube, Vimeo), with rights notes.
 - `remotion/` — Remotion 4 project. Composition `Reel` (`src/Reel.tsx`, brand tokens in `src/brand.ts`) implements the house
-  style: hook (box/stamp), name lower-third, magenta active-word captions, emphasis stamps, quote cards, end card. Put clips in `remotion/public/clips/`, render with
+  style: hook (box/stamp), name lower-third, magenta active-word captions, emphasis stamps, quote cards, end card. Composition
+  `Lore` (`src/Lore.tsx`) is format D: title card, stamp, serif captions under a letterboxed window, big words, bridge card.
+  Put clips in `remotion/public/clips/`, render with
   `cd remotion && npx remotion render src/index.ts Reel out/x.mp4 --props=props.json`.
+- `tools/assemble.py` — EDL → cut + reframe (`"letterbox": true` for format D); `tools/edl_captions.py` re-times the source
+  transcript onto the cut. Each reel lives in `edits/<name>/` (edl.json, props.json, README with title and description).
 - `models/` (gitignored) — sherpa-onnx ASR models, Silero VAD, MediaPipe face detectors, RNNoise `.rnnn` files.
 - `.claude/skills/` — vendored skills: Remotion (official), ffmpeg core/effects/social/python + viral-video
   (JosiahSiegel, MIT), clipify (MIT). See `docs/TOOLS.md`.

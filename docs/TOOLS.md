@@ -20,7 +20,7 @@ Researched and verified in the cloud sandbox on 2026-10-14 (CPU only; HuggingFac
 | Audio finishing | ✅ ffmpeg `arnndn` + RNNoise models (richardpl/arnndn-models), noisereduce 3.0.3, ffmpeg-normalize 1.43 | BSD/MIT | Denoise speech, -14 LUFS |
 | Music sync | ✅ librosa 1.0 | ISC | `beat_track` / `onset_detect` for beat-synced cuts |
 | Dedup / quality | ✅ imagehash 4.3.2, OpenCV Laplacian, ffmpeg `blurdetect`/`signalstats`/`blackdetect`/`freezedetect` | BSD | Drop duplicate, blurry, dark shots |
-| Fetch | ✅ yt-dlp | Unlicense | |
+| Fetch | ✅ yt-dlp, gdown | Unlicense, MIT | yt-dlp is blocked by YouTube's bot check from the sandbox; gdown pulls link-shared Drive files. See `docs/SOURCING.md` |
 
 ## Vendored Claude skills (`.claude/skills/`)
 

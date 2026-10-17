@@ -1,0 +1,729 @@
+{
+ "clip": "clips/06_musk_cut.mp4",
+ "durationSec": 36.76,
+ "window": {
+  "top": 541,
+  "height": 608
+ },
+ "title": {
+  "big": "18 YEARS",
+  "sub": "for one launch",
+  "durationMs": 2400
+ },
+ "stamps": [
+  {
+   "text": "May 30, 2020 · Kennedy Space Center",
+   "startMs": 2400,
+   "endMs": 9600
+  }
+ ],
+ "bigWords": [
+  {
+   "text": "EIGHTEEN\nYEARS.",
+   "startMs": 13360,
+   "endMs": 14500
+  }
+ ],
+ "credit": "Footage: NASA TV (public domain)",
+ "bridge": {
+  "kicker": "For student founders",
+  "text": "He was 30 when SpaceX started.\nThe first three rockets failed.\nSound familiar?",
+  "durationMs": 3200
+ },
+ "endCard": true,
+ "captions": [
+  {
+   "text": "getting",
+   "startMs": 38,
+   "endMs": 278,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " astronauts",
+   "startMs": 278,
+   "endMs": 1078,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " back",
+   "startMs": 1078,
+   "endMs": 1238,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " to",
+   "startMs": 1238,
+   "endMs": 1398,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " orbit",
+   "startMs": 1398,
+   "endMs": 2198,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " after",
+   "startMs": 2198,
+   "endMs": 2758,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " almost",
+   "startMs": 2758,
+   "endMs": 3158,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " a",
+   "startMs": 3158,
+   "endMs": 3318,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " decade.",
+   "startMs": 3318,
+   "endMs": 4630,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " I'm",
+   "startMs": 4670,
+   "endMs": 4750,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " really",
+   "startMs": 4750,
+   "endMs": 5150,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " quite",
+   "startMs": 5150,
+   "endMs": 5310,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " overcome",
+   "startMs": 5310,
+   "endMs": 6030,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " with",
+   "startMs": 6510,
+   "endMs": 6910,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " emotion",
+   "startMs": 6910,
+   "endMs": 7550,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " this",
+   "startMs": 7870,
+   "endMs": 8030,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " day.",
+   "startMs": 8030,
+   "endMs": 8430,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " So",
+   "startMs": 8430,
+   "endMs": 8670,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " it's",
+   "startMs": 8670,
+   "endMs": 8910,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " kinda",
+   "startMs": 8910,
+   "endMs": 9070,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " hard",
+   "startMs": 9070,
+   "endMs": 9230,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " to",
+   "startMs": 9230,
+   "endMs": 9390,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " talk,",
+   "startMs": 9390,
+   "endMs": 9710,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " frankly.",
+   "startMs": 9710,
+   "endMs": 10750,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " It's",
+   "startMs": 10858,
+   "endMs": 11018,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " been",
+   "startMs": 11018,
+   "endMs": 11178,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " eighteen",
+   "startMs": 11178,
+   "endMs": 11498,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " years",
+   "startMs": 11498,
+   "endMs": 11818,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " working",
+   "startMs": 11818,
+   "endMs": 12058,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " towards",
+   "startMs": 12058,
+   "endMs": 12378,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " this",
+   "startMs": 12378,
+   "endMs": 12618,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " goal.",
+   "startMs": 12618,
+   "endMs": 13258,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " So",
+   "startMs": 13300,
+   "endMs": 14100,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " It's",
+   "startMs": 14538,
+   "endMs": 14858,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " it's",
+   "startMs": 14858,
+   "endMs": 15018,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " hard",
+   "startMs": 15018,
+   "endMs": 15178,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " to",
+   "startMs": 15178,
+   "endMs": 15258,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " believe",
+   "startMs": 15258,
+   "endMs": 15418,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " that's",
+   "startMs": 15418,
+   "endMs": 15738,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " happened.",
+   "startMs": 15738,
+   "endMs": 16058,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " I",
+   "startMs": 16118,
+   "endMs": 16278,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " think",
+   "startMs": 16278,
+   "endMs": 16518,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " this",
+   "startMs": 16518,
+   "endMs": 16758,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " is",
+   "startMs": 16758,
+   "endMs": 16918,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " something",
+   "startMs": 16918,
+   "endMs": 17398,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " that",
+   "startMs": 17398,
+   "endMs": 17958,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " should",
+   "startMs": 17958,
+   "endMs": 18678,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " really",
+   "startMs": 18678,
+   "endMs": 19158,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " get",
+   "startMs": 19158,
+   "endMs": 19478,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " people,",
+   "startMs": 19478,
+   "endMs": 19958,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " I",
+   "startMs": 19958,
+   "endMs": 20038,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " mean,",
+   "startMs": 20038,
+   "endMs": 20358,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " right",
+   "startMs": 20358,
+   "endMs": 20598,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " on",
+   "startMs": 20598,
+   "endMs": 20758,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " the",
+   "startMs": 20758,
+   "endMs": 20838,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " heart",
+   "startMs": 20838,
+   "endMs": 21318,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " of",
+   "startMs": 21318,
+   "endMs": 21478,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " anyone",
+   "startMs": 21478,
+   "endMs": 22038,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " who",
+   "startMs": 22038,
+   "endMs": 22278,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " is",
+   "startMs": 22278,
+   "endMs": 22678,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " has",
+   "startMs": 22918,
+   "endMs": 23158,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " any",
+   "startMs": 23158,
+   "endMs": 23398,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " spirit",
+   "startMs": 23398,
+   "endMs": 23798,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " of",
+   "startMs": 23798,
+   "endMs": 23958,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " exploration.",
+   "startMs": 24118,
+   "endMs": 24918,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " it's",
+   "startMs": 24958,
+   "endMs": 25278,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " just",
+   "startMs": 25278,
+   "endMs": 25518,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " incredible.",
+   "startMs": 25518,
+   "endMs": 25998,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " this",
+   "startMs": 26058,
+   "endMs": 26218,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " is",
+   "startMs": 26218,
+   "endMs": 26378,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " a",
+   "startMs": 26378,
+   "endMs": 26618,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " a",
+   "startMs": 26618,
+   "endMs": 26778,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " craft",
+   "startMs": 26778,
+   "endMs": 27258,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " made",
+   "startMs": 27258,
+   "endMs": 27578,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " by",
+   "startMs": 27578,
+   "endMs": 27818,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " humans,",
+   "startMs": 27818,
+   "endMs": 29018,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " you",
+   "startMs": 29018,
+   "endMs": 29258,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " know,",
+   "startMs": 29258,
+   "endMs": 29738,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " for",
+   "startMs": 29738,
+   "endMs": 30058,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " humans.",
+   "startMs": 30058,
+   "endMs": 30538,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " It's",
+   "startMs": 30540,
+   "endMs": 30778,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " just",
+   "startMs": 30778,
+   "endMs": 31018,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " like",
+   "startMs": 31018,
+   "endMs": 31338,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " something",
+   "startMs": 31338,
+   "endMs": 31658,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " that",
+   "startMs": 31658,
+   "endMs": 31898,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " I",
+   "startMs": 31898,
+   "endMs": 32058,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " think",
+   "startMs": 32058,
+   "endMs": 32538,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " humanity",
+   "startMs": 32538,
+   "endMs": 33178,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " should",
+   "startMs": 33178,
+   "endMs": 33498,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " be",
+   "startMs": 33498,
+   "endMs": 33658,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " excited",
+   "startMs": 33658,
+   "endMs": 34138,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " about",
+   "startMs": 34138,
+   "endMs": 34378,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " and",
+   "startMs": 34378,
+   "endMs": 34538,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " proud",
+   "startMs": 34538,
+   "endMs": 34858,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " of",
+   "startMs": 34858,
+   "endMs": 35178,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " occurring",
+   "startMs": 35178,
+   "endMs": 35658,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " on",
+   "startMs": 35658,
+   "endMs": 35738,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " this",
+   "startMs": 35738,
+   "endMs": 35978,
+   "timestampMs": null,
+   "confidence": null
+  },
+  {
+   "text": " day.",
+   "startMs": 35978,
+   "endMs": 36756,
+   "timestampMs": null,
+   "confidence": null
+  }
+ ]
+}

@@ -16,6 +16,9 @@ cuts on the same shot gives the jump-cut "punch-in" look. Optional per segment:
   "fade_out": 0.08    longer audio fade-out (s) when a word's tail runs into the cut
   "freeze_at": 53.16  hold this source frame for the segment's length (audio still plays in..out),
                       pushing in from `zoom` to `zoom_to`: a beat to let a line land
+Top-level "letterbox": true (format D, docs/STYLE.md) keeps the source's own aspect ratio: the picture is
+fitted to 1080 wide and centred on LETTERBOX_CY, over a blurred, darkened copy of itself, with grain and a
+vignette. `zoom`/`cx`/`cy` still crop the source before it is fitted (a punch-in inside the window).
 Audio gets 15 ms fades at every cut so joins don't click.
 
 Prints the output-timeline start of every segment (handy for placing overlays) and writes it to
@@ -28,6 +31,25 @@ from pathlib import Path
 
 W, H = 1080, 1920
 FADE = 0.015
+LETTERBOX_CY = 845  # vertical centre of the archive window (44% of the frame)
+
+
+def letterbox_expr(zoom: float, cx: float, cy: float, sw: int, sh: int) -> str:
+    cw, ch = round(sw / zoom / 2) * 2, round(sh / zoom / 2) * 2
+    x = min(max(cx * sw - cw / 2, 0), sw - cw)
+    y = min(max(cy * sh - ch / 2, 0), sh - ch)
+    fh = round(W * ch / cw / 2) * 2  # window height once fitted to 1080 wide
+    return (f"crop={cw}:{ch}:{x:.0f}:{y:.0f},split[bg][fg];"
+            f"[bg]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},gblur=sigma=40,"
+            f"eq=brightness=-0.22:saturation=0.5[bgd];"
+            f"[fg]scale={W}:{fh}:flags=lanczos,eq=saturation=0.85[fgd];"
+            f"[bgd][fgd]overlay=0:{LETTERBOX_CY - fh // 2},noise=alls=10:allf=t,vignette=PI/5")
+
+
+def window_geometry(zoom: float, sw: int, sh: int) -> dict:
+    cw, ch = round(sw / zoom / 2) * 2, round(sh / zoom / 2) * 2
+    fh = round(W * ch / cw / 2) * 2
+    return {"top": LETTERBOX_CY - fh // 2, "height": fh}
 
 
 def crop_expr(zoom: float, cx: float, cy: float, sw: int, sh: int) -> str:
@@ -86,7 +108,9 @@ def main():
     parts, labels, timeline, t = [], [], [], 0.0
     for i, s in enumerate(edl["segments"]):
         d = s["out"] - s["in"]
-        if "freeze_at" in s:
+        if edl.get("letterbox"):
+            vf = letterbox_expr(s.get("zoom", 1.0), s.get("cx", 0.5), s.get("cy", 0.5), sw, sh)
+        elif "freeze_at" in s:
             vf = freeze_expr(s, sw, sh, src_fps)
         elif "punch_from" in s:
             vf = punch_expr(s, sw, sh, src_fps)
@@ -115,6 +139,9 @@ def main():
     for seg in timeline:
         print(f"{seg['start']:7.2f}s  +{seg['dur']:5.2f}  (src {seg['src_in']:6.2f})  {seg['note']}")
     print(f"total {t:.2f}s -> {args.out}")
+    if edl.get("letterbox"):
+        g = window_geometry(edl["segments"][0].get("zoom", 1.0), sw, sh)
+        print(f"window (Lore prop): {json.dumps(g)}")
 
 
 if __name__ == "__main__":

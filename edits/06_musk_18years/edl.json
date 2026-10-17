@@ -1,0 +1,17 @@
+{
+ "source": "input/archive/nasa_demo2/demo2_musk_medium.mp4",
+ "fps": 30,
+ "letterbox": true,
+ "segments": [
+  {"in": 15.92, "out": 20.55, "zoom": 1.0, "note": "COLD OPEN under title card: getting astronauts back to orbit after almost a decade"},
+  {"in": 45.15, "out": 48.95, "zoom": 1.0, "note": "I'm really quite overcome with emotion this day"},
+  {"in": 48.95, "out": 51.30, "zoom": 1.18, "cy": 0.42, "note": "So it's kinda hard to talk, frankly (punch-in)"},
+  {"in": 53.72, "out": 56.24, "zoom": 1.0, "note": "DREAM LINE: It's been eighteen years working towards this goal"},
+  {"in": 56.24, "out": 57.44, "zoom": 1.0, "note": "silence beat, big word EIGHTEEN YEARS over his face"},
+  {"in": 58.24, "out": 59.84, "zoom": 1.18, "cy": 0.42, "note": "It's hard to believe that's happened (punch-in)"},
+  {"in": 20.58, "out": 29.40, "zoom": 1.0, "note": "something that should get right on the heart of anyone who has any spirit of exploration"},
+  {"in": 74.00, "out": 75.10, "zoom": 1.18, "cy": 0.42, "note": "it's just incredible (punch-in)"},
+  {"in": 78.56, "out": 83.08, "zoom": 1.0, "note": "this is a craft made by humans, for humans"},
+  {"in": 83.08, "out": 89.30, "zoom": 1.18, "cy": 0.42, "fade_out": 0.3, "note": "humanity should be excited about and proud of, occurring on this day (punch-in)"}
+ ]
+}
