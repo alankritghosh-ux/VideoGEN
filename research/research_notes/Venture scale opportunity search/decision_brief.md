@@ -56,3 +56,24 @@ Pure forecasting/QCA (commoditised, unverifiable without plant data, pooling bea
 5. For F3: are merchant/co-optimised operations allowed under current SECI/state BESS contracts; which developers have trading desks; which OEM EMS bundles bidding; any Indian startup already doing it.
 6. For F2: does any Indian SaaS/consultant already reconcile OA bills; evidence of over-billing; what consumers pay energy consultants.
 7. 10+ named initial customer organisations for F1 with source-backed reasons and public contact routes.
+
+---
+
+## 7. Post-red-team update (coordinator, after reading red_team_counterevidence.md and f1_customers_and_buying.md)
+
+**Accepted score changes** (weights unchanged). Rationale in red_team_counterevidence.md; coordinator agrees with every move except where noted.
+
+| Finalist | Pre | Post | Cells moved | Why |
+|---|---|---|---|---|
+| F1 connectivity intelligence | 77 | **63** | Sev 4→3, Data 5→3, Comp 5→3, Durable 3→2, Accum 4→3 | CTUIL already publishes the queue as a filterable/exportable table and an API-backed status page; margin PDFs are stamped RESTRICTED and CTUIL's copyright policy forbids reproduction without permission; backlog is demand-side (22,054 MW blocked by unsigned PPAs, CERC 11/SM/2026 clearing ~15.7 GW); Tier-2 developers (Cleanmax, Gentari, Mahindra Susten, Serentica, ACME) file their own CERC comments, i.e., have in-house regulatory capacity. What survives: prediction/alerting layer, and the hard cost evidence (BG encashments ₹3.1–11.5 Cr per developer; CTUIL compensation rate ₹1,612/MW/day). |
+| F2 OA settlement & procurement | 76 | **71** | WTP 4→3, Comp 3→2 | ≥4 incumbents touch the job (Tata Power Trading settlement services; Customized Energy Solutions advisory; Open Access Exchange "zero upfront"; BridgeIT bill-validation SaaS claiming 1M+ bills/100+ DISCOMs). Over-billing is real but episodic/litigated (APTEL 366/2017, MERC 2021, DERC CSS petitions). No fee benchmark found. Still: the only finalist whose buyer is numerous, local to Bengaluru, and whose data arrives as routine customer exports. |
+| F3 BESS/FDRE dispatch | 72 | **60** | Sev 5→4, Data 4→2, Valid 3→2, Comp 4→3, First3 2→1 | Merchant storage (~80% of ~6.8 GWh operational per JMK Jun 2026 — supersedes the 758 MWh figure in opportunities_beyond_thesis.md, which counted standalone tendered projects only) is Adani and ACME, in-house capable; Tier-2 pipeline is availability-paid and SLDC-dispatched; draft ISTS rules bar grid charging; IEX terms of use are non-commercial, so backtests/feeds need a licence; DSM escalation for WS sellers deferred to bids ≥1 Jan 2027 / COD ≥1 Jan 2029; market-coupling rules not notified. |
+
+**Fairness caveat**: non-finalists were not red-teamed at the same depth. A bounded red-team of the next cluster (H4 CBAM, H5 dev-intel, H6 CCTS) is being run so the final ranking compares like with like. Until then, treat the post-red-team table as: F2 71 · [H4 67 / H5 64 / H6 64 — un-red-teamed] · F1 63 · H7 62 · F3 60.
+
+**Revised recommendation (provisional, to be confirmed in executive-decision.md): Validate First on F2**, with F1 reduced to (a) a 7-day technical probe plus a written data-reuse permission request to CTUIL and (b) an optional later module on the generator side; F3 becomes a 2027+ watch item tied to merchant-storage rules. Satellite imagery and plant-level forecasting remain rejected as entry wedges.
+
+**Cheapest invalidating experiments (revised)**
+- F2-A (technical, ≤14 days, ≈₹0): obtain 12 months of bills + SLDC/DISCOM energy-accounting statements from 3–5 Karnataka OA/group-captive consumers (via personal network, industry associations such as KASSIA/Peenya Industries Association/FKCCI energy committee, or a consultant partner); recompute charges under KERC tariff orders; measure recoverable overcharges + avoidable banking-lapse/DSM losses as % of annual OA bill. Pass: median ≥1.5% and ≥₹5 lakh/yr for ≥3 of 5 sites. Fail: <0.5% for 4 of 5 → the recurring value is bookkeeping, not money; re-scope to procurement optimisation or stop.
+- F2-B (commercial, ≤14 days): 10 interviews with plant heads/energy managers/CFOs at Karnataka/TN/MH OA consumers (1–20 MW). Pass: ≥4 of 10 currently pay someone (trader/consultant/in-house FTE) for OA settlement or report a dispute/lapse loss in 24 months AND ≥3 accept a success-fee audit. Fail: <2 and none accept.
+- F1-A0/A (≤7 days, ≈₹0): email CTUIL for written permission to reuse published data commercially; in parallel scrape the queue table/XLS and 2023–2026 PDFs and test whether a simple model predicts effective-within-12-months better than base rate (AUC ≥0.70 = skill). If permission refused or no skill → F1 is dead as a product; keep as internal research tool.
