@@ -106,7 +106,7 @@ For H4 and H6 the core calculation is a published procedure with published input
 
 ### Inferences
 - The defensible residue in H4/H6 is not calculation but (a) verifier relationships and (b) multi-year plant archetype data — both of which accrue to verifiers and auditors faster than to a software vendor. [HYP]
-- A plant's energy manager with ChatGPT/Claude and the BEE procedure can fill Form A; the reason to pay is the ACVA's signature, not the draft. [HYP]
+- A plant's energy manager with a general-purpose AI assistant and the BEE procedure can fill Form A; the reason to pay is the ACVA's signature, not the draft. [HYP]
 
 ### Gaps
 - The actual EU communication template (Excel/XML) was not downloaded; whether it already covers precursor traceability is UNK.
